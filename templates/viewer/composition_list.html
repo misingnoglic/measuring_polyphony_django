@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Motets</title>
+</head>
+<body>
+
+<h1>Motets</h1>
+<ul>
+{% for composition in object_list %}
+    <a href="{% url 'composition-detail' composition.pk %}">
+        <li>{{ composition.triplum_incipit }} - {{ composition.motetus_incipit }}{% if composition.tenor_incipit %} - {{ composition.tenor_incipit }}{% endif %}: {{ composition.composer.name }}</li>
+    </a>
+{% empty %}
+    <li>No motets yet.</li>
+{% endfor %}
+</ul>
+
+
+</body>
+</html>
+

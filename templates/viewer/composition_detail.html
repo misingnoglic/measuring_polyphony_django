@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Piece Detail</title>
+</head>
+<body>
+{{ object.triplum_incipit }} - {{ object.motetus_incipit }}{% if object.tenor_incipit %} - {{ object.tenor_incipit }}{% endif %}: {{ object.composer.name }}</body>
+<br>
+{% if object.main_source.iiif_manifest %}
+    <a href="{% url 'composition-iiif' object.pk %}">IIIF Link</a> - folios: {% for folio in folios %}{{ folio.folio_number }} {% endfor %}
+{% endif %}
+{{ svg|safe }}
+
+</html>

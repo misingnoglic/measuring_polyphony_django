@@ -1,0 +1,1270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mei xml:id="m-1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.music-encoding.org/ns/mei" meiversion="2013">
+	<meiHead xml:id="m-2">
+		<fileDesc xml:id="m-3">
+			<titleStmt xml:id="m-4">
+				<title xml:id="m-10">On parole/A Paris</title>
+				<title xml:id="m-11" type="subtitle">Mo 319</title>
+				<composer xml:id="m-12">Anonymous</composer>
+				<respStmt xml:id="m-14">
+					<persName xml:id="m-15" />
+				</respStmt>
+			</titleStmt>
+			<pubStmt xml:id="m-16">
+				<availability xml:id="m-17">
+					<useRestrict xml:id="m-18" />
+				</availability>
+			</pubStmt>
+		</fileDesc>
+		<encodingDesc xml:id="m-19">
+			<appInfo xml:id="m-20">
+				<application xml:id="sibelius" isodate="2016-4-29T19:15:38Z" version="7510">
+					<name xml:id="m-22" type="operating-system">Mac OS X Mountain Lion</name>
+				</application>
+				<application xml:id="sibmei" type="plugin" version="2.0.0b3">
+					<name xml:id="m-24">Sibelius to MEI Exporter (2.0.0b3)</name>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<workDesc xml:id="m-5">
+			<work xml:id="m-6">
+				<titleStmt xml:id="m-7">
+					<title xml:id="m-8">On parole/A Paris</title>
+					<respStmt xml:id="m-9">
+						<persName xml:id="m-13" role="composer">Anonymous</persName>
+					</respStmt>
+				</titleStmt>
+			</work>
+		</workDesc>
+	</meiHead>
+	<music xml:id="m-25">
+		<body xml:id="m-26">
+			<mdiv xml:id="m-27">
+				<score xml:id="m-28">
+					<scoreDef xml:id="m-29">
+						<staffGrp xml:id="m-40" n="1" symbol="bracket">
+							<staffDef xml:id="m-31" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="triplum" lines="5" n="1" modusmaior="2" modusminor="3" tempus="3">
+								<!-- voice.male.tenor.ensemble.ah -->
+								<instrDef xml:id="m-33" midi.channel="1" midi.pan="81" midi.volume="100" />
+							</staffDef>
+							<staffDef xml:id="m-34" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="motetus" lines="5" n="2" modusmaior="2" modusminor="3" tempus="3">
+								<!-- voice.male.tenor.ensemble.ah -->
+								<instrDef xml:id="m-36" midi.channel="1" midi.pan="81" midi.volume="100" />
+							</staffDef>
+							<staffDef xml:id="m-37" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="tenor" lines="5" n="3" modusmaior="2" modusminor="3" tempus="3">
+								<!-- voice.male.tenor.ah -->
+								<instrDef xml:id="m-39" midi.channel="1" midi.pan="81" midi.volume="100" />
+							</staffDef>
+						</staffGrp>
+					</scoreDef>
+					<section xml:id="m-41">
+						<staff xml:id="m-43" n="1">
+							<layer xml:id="m-44" n="1">
+								<note xml:id="m-45" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-48" n="1">
+										<syl xml:id="m-49" wordpos="i">On</syl>
+									</verse>
+								</note>
+								<note xml:id="m-46" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-66" n="1">
+										<syl xml:id="m-67" wordpos="i">pa</syl>
+									</verse>
+								</note>
+								<note xml:id="m-47" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-68" n="1">
+										<syl xml:id="m-69" wordpos="m">ro</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-c0b4fa0a-fafd-4366-94f7-9e44e90b07f2" />
+								<note xml:id="m-61" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-70" n="1">
+										<syl xml:id="m-71" wordpos="t">le</syl>
+									</verse>
+								</note>
+								<note xml:id="m-62" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-72" n="1">
+										<syl xml:id="m-73" wordpos="i">de</syl>
+									</verse>
+								</note>
+								<note xml:id="m-63" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-74" n="1">
+										<syl xml:id="m-75" wordpos="i">batre</syl>
+									</verse>
+								</note>
+								<note xml:id="m-65" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="e" quality="major" num="1" numbase="2">
+									<verse xml:id="m-76" n="1">
+										<syl xml:id="m-77" wordpos="i">et</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-c3bbdcb3-34fd-4d3d-b169-259d041b3680" />
+								<note xml:id="m-97" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-101" n="1">
+										<syl xml:id="m-102" wordpos="i">de</syl>
+									</verse>
+								</note>
+								<note xml:id="m-98" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-103" n="1">
+										<syl xml:id="m-104" wordpos="i">van</syl>
+									</verse>
+								</note>
+								<note xml:id="m-99" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="f" quality="major" num="1" numbase="2">
+									<verse xml:id="m-105" n="1">
+										<syl xml:id="m-106" wordpos="t">ner</syl>
+									</verse>
+								</note>
+								<note xml:id="m-100" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="g">
+									<verse xml:id="m-107" n="1">
+										<syl xml:id="m-108" wordpos="i">et</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-5919d1d5-be7d-406f-ba7a-c5997cefb541" />
+								<note xml:id="m-120" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="a">
+									<verse xml:id="m-125" n="1">
+										<syl xml:id="m-126" wordpos="i">de</syl>
+									</verse>
+								</note>
+								<note xml:id="m-121" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="a">
+									<verse xml:id="m-127" n="1">
+										<syl xml:id="m-128" wordpos="i">fo</syl>
+									</verse>
+								</note>
+								<note xml:id="m-122" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="g">
+									<verse xml:id="m-129" n="1">
+										<syl xml:id="m-130" wordpos="t">ir</syl>
+									</verse>
+								</note>
+								<note xml:id="m-124" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="f" quality="major" num="1" numbase="2">
+									<verse xml:id="m-131" n="1">
+										<syl xml:id="m-132" wordpos="i">et</syl>
+									</verse>
+								</note>
+								<dot xml:id="m-d8a01de8-d7ad-4e51-a362-c6adc8c1254d" />
+								<barLine xml:id="m-bccb2705-fded-4474-9eee-96dcf8235419" />
+								<note xml:id="m-153" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-156" n="1">
+										<syl xml:id="m-157" wordpos="i">de</syl>
+									</verse>
+								</note>
+								<note xml:id="m-154" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="f" quality="major" num="1" numbase="2">
+									<verse xml:id="m-158" n="1">
+										<syl xml:id="m-159" wordpos="i">han</syl>
+									</verse>
+								</note>
+								<note xml:id="m-155" dur="longa" dur.ges="4096p" oct="4" oct.ges="3" pname="g" quality="i" num="3" numbase="2">
+									<verse xml:id="m-160" n="1">
+										<syl xml:id="m-161" wordpos="t">ner</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-c86d0ae6-0936-496e-9316-808f346f49b6" />
+								<rest xml:id="m-188" dur="brevis" dur.ges="2048p" />
+								<rest xml:id="m-189" dur="longa" dur.ges="4096p" EVENTUALDUR="2B" num="3" numbase="2" />
+								<barLine xml:id="m-0864d96f-c288-42f7-a89e-75895b43f169" />
+								<note xml:id="m-227" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="a">
+									<verse xml:id="m-231" n="1">
+										<syl xml:id="m-232" wordpos="i">mais</syl>
+									</verse>
+								</note>
+								<note xml:id="m-228" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="a">
+									<verse xml:id="m-233" n="1">
+										<syl xml:id="m-234" wordpos="i">ces</syl>
+									</verse>
+								</note>
+								<note xml:id="m-229" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="g">
+									<verse xml:id="m-235" n="1">
+										<syl xml:id="m-236" wordpos="i">de</syl>
+									</verse>
+								</note>
+								<note xml:id="m-230" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="f" quality="major" num="1" numbase="2">
+									<verse xml:id="m-237" n="1">
+										<syl xml:id="m-238" wordpos="t">duis</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-2b9ae610-0e48-48cc-b486-ee452b91f909" />
+								<note xml:id="m-253" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="g">
+									<verse xml:id="m-256" n="1">
+										<syl xml:id="m-257" wordpos="i">trop</syl>
+									</verse>
+								</note>
+								<note xml:id="m-254" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-258" n="1">
+										<syl xml:id="m-259" wordpos="i">me</syl>
+									</verse>
+								</note>
+								<note xml:id="m-255" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-291" n="1">
+										<syl xml:id="m-292" wordpos="i">des</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-79fb56af-7788-479c-aea3-d4fbf9d19e87" />
+								<note xml:id="m-277" dur="longa" dur.ges="6144p" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-293" n="1">
+										<syl xml:id="m-294" wordpos="m">plai</syl>
+									</verse>
+								</note>
+								<dot xml:id="m-93ed686c-8152-42c0-9465-861b1de7b737" />
+								<barLine xml:id="m-c4b713d0-233c-4fc4-9480-8175c66f1493" />
+								<note xml:id="m-287" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-295" n="1">
+										<syl xml:id="m-296" wordpos="t">sent</syl>
+									</verse>
+								</note>
+								<note xml:id="m-289" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-297" n="1">
+										<syl xml:id="m-298" wordpos="i">car</syl>
+									</verse>
+								</note>
+								<note xml:id="m-290" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-299" n="1">
+										<syl xml:id="m-300" wordpos="i">il</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-4062f333-5142-41ea-9f9d-b4b6a9878419" />
+								<note xml:id="m-323" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="g">
+									<verse xml:id="m-327" n="1">
+										<syl xml:id="m-328" wordpos="i">n&amp;amp;apos;est</syl>
+									</verse>
+								</note>
+								<note xml:id="m-324" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-329" n="1">
+										<syl xml:id="m-330" wordpos="i">si</syl>
+									</verse>
+								</note>
+								<note xml:id="m-325" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="e" quality="major" num="1" numbase="2">
+									<verse xml:id="m-331" n="1">
+										<syl xml:id="m-332" wordpos="i">bo</syl>
+									</verse>
+								</note>
+								<note xml:id="m-326" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-333" n="1">
+										<syl xml:id="m-334" wordpos="t">ne</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-779a4f8c-82e4-4920-9d59-2f64fd8e4a09" />
+								<note xml:id="m-346" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-351" n="1">
+										<syl xml:id="m-352" wordpos="i">vi</syl>
+									</verse>
+								</note>
+								<note xml:id="m-347" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-353" n="1">
+										<syl xml:id="m-354" wordpos="t">e</syl>
+									</verse>
+								</note>
+								<note xml:id="m-349" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="g">
+									<verse xml:id="m-355" n="1">
+										<syl xml:id="m-356" wordpos="i">que</syl>
+									</verse>
+								</note>
+								<note xml:id="m-350" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="f" quality="major" num="1" numbase="2">
+									<verse xml:id="m-357" n="1">
+										<syl xml:id="m-358" wordpos="i">d&amp;amp;apos;estre</syl>
+									</verse>
+								</note>
+								<dot xml:id="m-d8e613a8-4a4f-4edc-a2a9-f85a2dae5065" />
+								<barLine xml:id="m-34a32d86-3805-4a75-87d2-7fa62430b661" />
+								<note xml:id="m-378" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-381" n="1">
+										<syl xml:id="m-382" wordpos="i">a</syl>
+									</verse>
+								</note>
+								<note xml:id="m-379" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="d" quality="major" num="1" numbase="2">
+									<verse xml:id="m-383" n="1">
+										<syl xml:id="m-384" wordpos="i">ai</syl>
+									</verse>
+								</note>
+								<note xml:id="m-380" dur="longa" dur.ges="4096p" oct="4" oct.ges="3" pname="f" quality="i" num="3" numbase="2">
+									<verse xml:id="m-385" n="1">
+										<syl xml:id="m-386" wordpos="t">se</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-202b085a-5d6f-412d-aa49-56d239050af8" />
+								<rest xml:id="m-412" dur="brevis" dur.ges="2048p" />
+								<rest xml:id="m-413" dur="longa" dur.ges="4096p" EVENTUALDUR="2B" num="3" numbase="2" />
+								<barLine xml:id="m-5e7fd62c-be1a-45be-a4ec-ad8b05e22525" />
+								<note xml:id="m-452" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="a">
+									<verse xml:id="m-458" n="1">
+										<syl xml:id="m-459" wordpos="i">de</syl>
+									</verse>
+								</note>
+								<note xml:id="m-453" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="a">
+									<verse xml:id="m-460" n="1">
+										<syl xml:id="m-461" wordpos="i">bon</syl>
+									</verse>
+								</note>
+								<note xml:id="m-455" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="g" quality="major" num="1" numbase="2">
+									<verse xml:id="m-462" n="1">
+										<syl xml:id="m-463" wordpos="i">cler</syl>
+									</verse>
+								</note>
+								<note xml:id="m-456" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-464" n="1">
+										<syl xml:id="m-465" wordpos="i">vin</syl>
+									</verse>
+								</note>
+								<note xml:id="m-457" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="e" quality="major" num="1" numbase="2">
+									<verse xml:id="m-466" n="1">
+										<syl xml:id="m-467" wordpos="i">et</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-986b5b4a-2f11-47d1-bbf4-ef540d37882f" />
+								<note xml:id="m-483" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-485" n="1">
+										<syl xml:id="m-486" wordpos="i">de</syl>
+									</verse>
+								</note>
+								<note xml:id="m-484" dur="longa" dur.ges="4096p" oct="4" oct.ges="3" pname="g" quality="i" num="3" numbase="2">
+									<verse xml:id="m-509" n="1">
+										<syl xml:id="m-510" wordpos="i">cha</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-70e5552b-9e08-43d7-bf05-e975ab306320" />
+								<note xml:id="m-504" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-511" n="1">
+										<syl xml:id="m-512" wordpos="t">pons</syl>
+									</verse>
+								</note>
+								<note xml:id="m-506" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-513" n="1">
+										<syl xml:id="m-514" wordpos="i">et</syl>
+									</verse>
+								</note>
+								<note xml:id="m-507" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="d" quality="major" num="1" numbase="2">
+									<verse xml:id="m-515" n="1">
+										<syl xml:id="m-516" wordpos="i">d&amp;amp;apos;estre</syl>
+									</verse>
+								</note>
+								<note xml:id="m-508" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-530" n="1">
+										<syl xml:id="m-531" wordpos="i">a</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-a7110e6a-40b6-4499-93ee-69295051944a" />
+								<note xml:id="m-526" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-532" n="1">
+										<syl xml:id="m-533" wordpos="t">veuc</syl>
+									</verse>
+								</note>
+								<note xml:id="m-527" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-534" n="1">
+										<syl xml:id="m-535" wordpos="i">bons</syl>
+									</verse>
+								</note>
+								<note xml:id="m-529" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-563" n="1">
+										<syl xml:id="m-564" wordpos="i">com</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-b6eaab8c-5be9-4325-a28b-6f718100d0fb" />
+								<note xml:id="m-560" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="g">
+									<verse xml:id="m-565" n="1">
+										<syl xml:id="m-566" wordpos="m">pai</syl>
+									</verse>
+								</note>
+								<note xml:id="m-561" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="g">
+									<verse xml:id="m-567" n="1">
+										<syl xml:id="m-568" wordpos="t">gnons</syl>
+									</verse>
+								</note>
+								<note xml:id="m-562" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-569" n="1">
+										<syl xml:id="m-570" wordpos="i">lies</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-2b5054d3-dff4-4c62-a897-4d52b7dbb5f8" />
+								<note xml:id="m-580" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-587" n="1">
+										<syl xml:id="m-588" wordpos="i">et</syl>
+									</verse>
+								</note>
+								<note xml:id="m-582" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-589" n="1">
+										<syl xml:id="m-590" wordpos="i">ioi</syl>
+									</verse>
+								</note>
+								<note xml:id="m-584" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="d" />
+								<note xml:id="m-585" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="c" />
+								<note xml:id="m-586" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-591" n="1">
+										<syl xml:id="m-592" wordpos="t">ans</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-221a4325-30fb-4d63-95b8-5ed3e085d769" />
+								<note xml:id="m-618" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-622" n="1">
+										<syl xml:id="m-623" wordpos="i">chan</syl>
+									</verse>
+								</note>
+								<note xml:id="m-619" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="f" quality="major" num="1" numbase="2">
+									<verse xml:id="m-624" n="1">
+										<syl xml:id="m-625" wordpos="t">tans</syl>
+									</verse>
+								</note>
+								<note xml:id="m-620" dur="longa" dur.ges="4096p" oct="4" oct.ges="3" pname="g" quality="i" num="3" numbase="2">
+									<verse xml:id="m-651" n="1">
+										<syl xml:id="m-652" wordpos="i">truf</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-520aeaaa-66cb-4a7b-84e7-7be8e98b9513" />
+								<note xml:id="m-647" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="g">
+									<verse xml:id="m-653" n="1">
+										<syl xml:id="m-654" wordpos="t">fans</syl>
+									</verse>
+								</note>
+								<note xml:id="m-648" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-655" n="1">
+										<syl xml:id="m-656" wordpos="i">et</syl>
+									</verse>
+								</note>
+								<note xml:id="m-649" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-688" n="1">
+										<syl xml:id="m-689" wordpos="i">a</syl>
+									</verse>
+								</note>
+								<note xml:id="m-650" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="d" quality="major" num="1" numbase="2">
+									<verse xml:id="m-690" n="1">
+										<syl xml:id="m-691" wordpos="m">mo</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-3fa75379-8460-41d4-b72e-4e7372d2b9d0" />
+								<note xml:id="m-687" dur="longa" dur.ges="6144p" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-692" n="1">
+										<syl xml:id="m-693" wordpos="t">rous</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-f38de4bf-7799-4277-baf7-627634c9fe27" />
+								<rest xml:id="m-709" dur="longa" EVENTUALDUR="3B" />
+								<barLine xml:id="m-d7035361-b006-48ec-af9d-b6682d0e8f9a" />
+								<note xml:id="m-730" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-732" n="1">
+										<syl xml:id="m-733" wordpos="i">et</syl>
+									</verse>
+								</note>
+								<note xml:id="m-731" dur="longa" dur.ges="4096p" oct="4" oct.ges="3" pname="f" quality="i" num="3" numbase="2">
+									<verse xml:id="m-748" n="1">
+										<syl xml:id="m-749" wordpos="i">d&amp;amp;apos;a</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-4f28fa18-54bd-4c6c-945d-628bf9f20830" />
+								<note xml:id="m-745" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="g">
+									<verse xml:id="m-750" n="1">
+										<syl xml:id="m-751" wordpos="t">voir</syl>
+									</verse>
+								</note>
+								<note xml:id="m-746" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="a">
+									<verse xml:id="m-752" n="1">
+										<syl xml:id="m-753" wordpos="i">quant</syl>
+									</verse>
+								</note>
+								<note xml:id="m-747" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="a">
+									<verse xml:id="m-754" n="1">
+										<syl xml:id="m-755" wordpos="i">c&amp;amp;apos;on</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-4ffc9211-1b33-41e8-851a-9c26b40cc1ab" />
+								<note xml:id="m-775" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="g">
+									<verse xml:id="m-780" n="1">
+										<syl xml:id="m-781" wordpos="i">a</syl>
+									</verse>
+								</note>
+								<note xml:id="m-776" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-782" n="1">
+										<syl xml:id="m-783" wordpos="i">mes</syl>
+									</verse>
+								</note>
+								<note xml:id="m-778" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="e" quality="major" num="1" numbase="2">
+									<verse xml:id="m-784" n="1">
+										<syl xml:id="m-785" wordpos="t">tier</syl>
+									</verse>
+								</note>
+								<note xml:id="m-779" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-786" n="1">
+										<syl xml:id="m-787" wordpos="i">pour</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-4a7b016e-81de-4d7f-867f-e182729e100b" />
+								<note xml:id="m-797" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-829" n="1">
+										<syl xml:id="m-830" wordpos="i">so</syl>
+									</verse>
+								</note>
+								<note xml:id="m-798" dur="longa" dur.ges="4096p" oct="4" oct.ges="3" pname="d" quality="i" num="3" numbase="2">
+									<verse xml:id="m-831" n="1">
+										<syl xml:id="m-832" wordpos="m">la</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-efa87ac8-4bd4-47a5-a1e9-4ccd01af8f52" />
+								<note xml:id="m-823" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-833" n="1">
+										<syl xml:id="m-834" wordpos="t">cier</syl>
+									</verse>
+								</note>
+								<note xml:id="m-824" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="d" quality="major" num="1" numbase="2">
+									<verse xml:id="m-835" n="1">
+										<syl xml:id="m-836" wordpos="i">be</syl>
+									</verse>
+								</note>
+								<note xml:id="m-826" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-837" n="1">
+										<syl xml:id="m-838" wordpos="t">les</syl>
+									</verse>
+								</note>
+								<note xml:id="m-827" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-839" n="1">
+										<syl xml:id="m-840" wordpos="i">da</syl>
+									</verse>
+								</note>
+								<note xml:id="m-828" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="g" quality="major" num="1" numbase="2">
+									<verse xml:id="m-841" n="1">
+										<syl xml:id="m-842" wordpos="t">mes</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-2eff1ff8-8407-486f-83b8-54c4bebd40ec" />
+								<note xml:id="m-867" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-873" n="1">
+										<syl xml:id="m-874" wordpos="i">a</syl>
+									</verse>
+								</note>
+								<note xml:id="m-868" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="e" quality="major" num="1" numbase="2">
+									<verse xml:id="m-875" n="1">
+										<syl xml:id="m-876" wordpos="i">de</syl>
+									</verse>
+								</note>
+								<note xml:id="m-869" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-877" n="1">
+										<syl xml:id="m-878" wordpos="t">vis</syl>
+									</verse>
+								</note>
+								<note xml:id="m-870" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-879" n="1">
+										<syl xml:id="m-880" wordpos="i">et</syl>
+									</verse>
+								</note>
+								<note xml:id="m-872" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="f" quality="major" num="1" numbase="2">
+									<verse xml:id="m-881" n="1">
+										<syl xml:id="m-882" wordpos="i">tout</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-024c9474-7537-44e9-b3db-8582786a70ca" />
+								<note xml:id="m-912" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="g">
+									<verse xml:id="m-918" n="1">
+										<syl xml:id="m-919" wordpos="i">ce</syl>
+									</verse>
+								</note>
+								<note xml:id="m-913" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="a" quality="major" num="1" numbase="2">
+									<verse xml:id="m-920" n="1">
+										<syl xml:id="m-921" wordpos="i">truev</syl>
+									</verse>
+								</note>
+								<note xml:id="m-914" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="a">
+									<verse xml:id="m-922" n="1">
+										<syl xml:id="m-923" wordpos="i">on</syl>
+									</verse>
+								</note>
+								<note xml:id="m-915" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="g">
+									<verse xml:id="m-924" n="1">
+										<syl xml:id="m-925" wordpos="i">a</syl>
+									</verse>
+								</note>
+								<note xml:id="m-916" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="f" quality="major" num="1" numbase="2">
+									<accid xml:id="m-917" accid="s" />
+									<verse xml:id="m-940" n="1">
+										<syl xml:id="m-941" wordpos="i">pa</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-397a00ae-490e-4575-8f21-6b9deab390a3" />
+								<note xml:id="m-939" dur="longa" dur.ges="6144p" oct="4" oct.ges="3" pname="g">
+									<verse xml:id="m-942" n="1">
+										<syl xml:id="m-943" wordpos="t">ris.</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-7cc5877e-0b5f-408b-ade9-7363a92671f7" />
+							</layer>
+						</staff>
+						<staff xml:id="m-50" n="2">
+							<layer xml:id="m-51" n="1">
+								<note xml:id="m-52" dur="longa" dur.ges="6144p" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-53" n="1">
+										<syl xml:id="m-54" wordpos="i">A</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-be41b0e3-922b-451e-87d3-cd96f1b3ea3a" />
+								<note xml:id="m-80" dur="brevis" dur.ges="2048p" oct="3" oct.ges="2" pname="b">
+									<verse xml:id="m-82" n="1">
+										<syl xml:id="m-83" wordpos="i">Pa</syl>
+									</verse>
+								</note>
+								<note xml:id="m-81" artic="stop" dur="brevis" dur.ges="4096p" oct="3" oct.ges="2" pname="a" quality="a" num="1" numbase="2">
+									<verse xml:id="m-84" n="1">
+										<syl xml:id="m-85" wordpos="t">ris</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-30093af3-3083-4d47-8bbc-3d3d6fb7fbe2" />
+								<note xml:id="m-111" dur="longa" dur.ges="6144p" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-112" n="1">
+										<syl xml:id="m-113" wordpos="i">soir</syl>
+									</verse>
+								</note>
+								<dot xml:id="m-4079fa15-f8fa-4b61-ad40-ecadcfdf358c" />
+								<barLine xml:id="m-1d47581b-8472-4d25-86e7-23c93ec9f803" />
+								<note xml:id="m-135" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-138" n="1">
+										<syl xml:id="m-139" wordpos="i">et</syl>
+									</verse>
+								</note>
+								<note xml:id="m-136" dur="longa" dur.ges="4096p" oct="4" oct.ges="3" pname="d" quality="i" num="3" numbase="2">
+									<verse xml:id="m-167" n="1">
+										<syl xml:id="m-168" wordpos="i">ma</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-ce8828b8-ba10-496b-b6f8-bcc4f02552a5" />
+								<note xml:id="m-164" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-169" n="1">
+										<syl xml:id="m-170" wordpos="t">tin</syl>
+									</verse>
+								</note>
+								<note xml:id="m-165" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="b" quality="major" num="1" numbase="2">
+									<verse xml:id="m-171" n="1">
+										<syl xml:id="m-172" wordpos="i">truev</syl>
+									</verse>
+								</note>
+								<note xml:id="m-166" dur="longa" dur.ges="4096p" oct="4" oct.ges="3" pname="c" quality="i" num="3" numbase="2">
+									<verse xml:id="m-173" n="1">
+										<syl xml:id="m-174" wordpos="i">on</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-ef167c98-9dba-4a47-b993-0ab203553250" />
+								<note xml:id="m-192" dur="brevis" dur.ges="2048p" oct="3" oct.ges="2" pname="a">
+									<verse xml:id="m-197" n="1">
+										<syl xml:id="m-198" wordpos="i">bon</syl>
+									</verse>
+								</note>
+								<note xml:id="m-193" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="b">
+									<verse xml:id="m-199" n="1">
+										<syl xml:id="m-200" wordpos="i">pain</syl>
+									</verse>
+								</note>
+								<note xml:id="m-195" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="c" quality="major" num="1" numbase="2">
+									<verse xml:id="m-201" n="1">
+										<syl xml:id="m-202" wordpos="i">et</syl>
+									</verse>
+								</note>
+								<note xml:id="m-196" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-203" n="1">
+										<syl xml:id="m-204" wordpos="i">bon</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-70616c67-a251-4e6d-9afd-252aa198b446" />
+								<note xml:id="m-242" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-245" n="1">
+										<syl xml:id="m-246" wordpos="i">cler</syl>
+									</verse>
+								</note>
+								<note xml:id="m-243" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="d" />
+								<note xml:id="m-244" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="c" />
+								<barLine xml:id="m-7a586bcb-09e6-4bfe-9b2e-9f7b38ff048c" />
+								<note xml:id="m-262" dur="longa" dur.ges="4096p" oct="4" oct.ges="3" pname="d" quality="i" num="3" numbase="2">
+									<verse xml:id="m-264" n="1">
+										<syl xml:id="m-265" wordpos="i">vin</syl>
+									</verse>
+								</note>
+								<rest xml:id="m-263" dur="brevis" dur.ges="2048p" />
+								<barLine xml:id="m-5866b950-9aec-4268-8e00-be129ad5cccb" />
+								<note xml:id="m-280" dur="longa" dur.ges="6144p" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-306" n="1">
+										<syl xml:id="m-307" wordpos="i">bo</syl>
+									</verse>
+								</note>
+								<dot xml:id="m-18541d33-8e06-4dbd-86f5-d0f09f30ff55" />
+								<barLine xml:id="m-6c7de4ce-63a6-4434-bcc0-0d5befebe841" />
+								<note xml:id="m-303" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-308" n="1">
+										<syl xml:id="m-309" wordpos="t">ne</syl>
+									</verse>
+								</note>
+								<note xml:id="m-305" artic="stop" dur="brevis" dur.ges="4096p" oct="4" oct.ges="3" pname="c" quality="a" num="1" numbase="2">
+									<verse xml:id="m-310" n="1">
+										<syl xml:id="m-311" wordpos="i">char</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-c13b298e-3546-40a9-830d-88310a191923" />
+								<note xml:id="m-337" dur="longa" dur.ges="6144p" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-338" n="1">
+										<syl xml:id="m-339" wordpos="i">et</syl>
+									</verse>
+								</note>
+								<dot xml:id="m-b3ab477a-a3b0-492f-9552-e559dbcc6654" />
+								<barLine xml:id="m-9a29db2f-5229-4087-8cb3-e3e216170f33" />
+								<note xml:id="m-361" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-363" n="1">
+										<syl xml:id="m-364" wordpos="i">bon</syl>
+									</verse>
+								</note>
+								<note xml:id="m-362" dur="longa" dur.ges="4096p" oct="3" oct.ges="2" pname="b" quality="i" num="3" numbase="2">
+									<verse xml:id="m-393" n="1">
+										<syl xml:id="m-394" wordpos="i">pois</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-f7b0d746-7d0d-4e1f-913c-c9ab3760cbcf" />
+								<note xml:id="m-389" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="a">
+									<verse xml:id="m-395" n="1">
+										<syl xml:id="m-396" wordpos="t">son</syl>
+									</verse>
+								</note>
+								<note xml:id="m-390" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="g" quality="major" num="1" numbase="2">
+									<verse xml:id="m-397" n="1">
+										<syl xml:id="m-398" wordpos="i">de</syl>
+									</verse>
+								</note>
+								<note xml:id="m-392" dur="longa" dur.ges="4096p" oct="3" oct.ges="2" pname="f" quality="i" num="3" numbase="2">
+									<verse xml:id="m-422" n="1">
+										<syl xml:id="m-423" wordpos="i">tou</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-8c565a5f-1d56-44ca-9c5e-ebeb8bc72101" />
+								<note xml:id="m-416" dur="brevis" dur.ges="2048p" oct="3" oct.ges="2" pname="a">
+									<verse xml:id="m-424" n="1">
+										<syl xml:id="m-425" wordpos="t">tes</syl>
+									</verse>
+								</note>
+								<note xml:id="m-417" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="b">
+									<verse xml:id="m-426" n="1">
+										<syl xml:id="m-427" wordpos="i">gui</syl>
+									</verse>
+								</note>
+								<note xml:id="m-418" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="c" quality="major" num="1" numbase="2">
+									<verse xml:id="m-428" n="1">
+										<syl xml:id="m-429" wordpos="t">ses</syl>
+									</verse>
+								</note>
+								<dot xml:id="m-82b64b4a-850f-45e1-b5cd-1760253b685b" />
+								<note xml:id="m-419" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="a">
+									<verse xml:id="m-471" n="1">
+										<syl xml:id="m-472" wordpos="i">com</syl>
+									</verse>
+								</note>
+								<note xml:id="m-421" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="g" quality="major" num="1" numbase="2">
+									<verse xml:id="m-473" n="1">
+										<syl xml:id="m-474" wordpos="m">pai</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-94a3b7c0-c338-44f9-b068-cdca29261d90" />
+								<note xml:id="m-470" dur="longa" dur.ges="6144p" oct="3" oct.ges="2" pname="a">
+									<verse xml:id="m-475" n="1">
+										<syl xml:id="m-476" wordpos="t">gnons</syl>
+									</verse>
+								</note>
+								<dot xml:id="m-2bf1503e-8835-4aa8-89f2-896b16783381" />
+								<barLine xml:id="m-e39b3bc4-1ecb-415d-a2f6-943689f19e1f" />
+								<note xml:id="m-489" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-491" n="1">
+										<syl xml:id="m-492" wordpos="i">sens</syl>
+									</verse>
+								</note>
+								<note xml:id="m-490" artic="stop" dur="brevis" dur.ges="4096p" oct="4" oct.ges="3" pname="d" quality="a" num="1" numbase="2">
+									<verse xml:id="m-541" n="1">
+										<syl xml:id="m-542" wordpos="i">sou</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-97b88b2a-9637-4bff-bfa9-c27930878a78" />
+								<note xml:id="m-519" dur="longa" dur.ges="6144p" oct="4" oct.ges="3" pname="f">
+									<verse xml:id="m-543" n="1">
+										<syl xml:id="m-544" wordpos="m">ti</syl>
+									</verse>
+								</note>
+								<dot xml:id="m-2412717e-272a-4e43-a03c-cb650dd708aa" />
+								<barLine xml:id="m-ddfbbfb7-5f7c-4127-b504-3567a1cab1e6" />
+								<note xml:id="m-538" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-545" n="1">
+										<syl xml:id="m-546" wordpos="t">e</syl>
+									</verse>
+								</note>
+								<note xml:id="m-540" artic="stop" dur="brevis" dur.ges="4096p" oct="4" oct.ges="3" pname="e" quality="a" num="1" numbase="2">
+									<verse xml:id="m-547" n="1">
+										<syl xml:id="m-548" wordpos="i">grant</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-a3c82ef3-f061-4c75-bdeb-67efca711dc4" />
+								<note xml:id="m-573" dur="longa" dur.ges="6144p" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-598" n="1">
+										<syl xml:id="m-599" wordpos="i">bau</syl>
+									</verse>
+								</note>
+								<dot xml:id="m-0230579d-d38f-4e0a-928c-eb68625265b9" />
+								<barLine xml:id="m-fbdc1f84-5b8c-44d8-861e-ecbfef974189" />
+								<note xml:id="m-595" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-600" n="1">
+										<syl xml:id="m-601" wordpos="t">dour</syl>
+									</verse>
+								</note>
+								<note xml:id="m-596" dur="longa" dur.ges="4096p" oct="4" oct.ges="3" pname="f" quality="i" num="3" numbase="2">
+									<verse xml:id="m-602" n="1">
+										<syl xml:id="m-603" wordpos="i">biaus</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-bd53dd00-d2f2-48ec-92bc-26a27dbd4857" />
+								<note xml:id="m-628" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="e">
+									<verse xml:id="m-631" n="1">
+										<syl xml:id="m-632" wordpos="i">ioi</syl>
+									</verse>
+								</note>
+								<note xml:id="m-629" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="d" quality="major" num="1" numbase="2">
+									<verse xml:id="m-633" n="1">
+										<syl xml:id="m-634" wordpos="t">aus</syl>
+									</verse>
+								</note>
+								<note xml:id="m-630" dur="longa" dur.ges="4096p" oct="4" oct.ges="3" pname="c" quality="i" num="3" numbase="2">
+									<verse xml:id="m-661" n="1">
+										<syl xml:id="m-662" wordpos="i">da</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-352d6ea9-7c61-4167-9014-15241c321c18" />
+								<note xml:id="m-659" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-663" n="1">
+										<syl xml:id="m-664" wordpos="t">mes</syl>
+									</verse>
+								</note>
+								<note xml:id="m-660" artic="stop" dur="brevis" dur.ges="4096p" oct="4" oct.ges="3" pname="d" quality="a" num="1" numbase="2">
+									<verse xml:id="m-699" n="1">
+										<syl xml:id="m-700" wordpos="i">dou</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-ff9d0dcf-8c9d-4f9f-8654-5674910b1502" />
+								<note xml:id="m-696" dur="longa" dur.ges="4096p" oct="4" oct.ges="3" pname="e" quality="i" num="3" numbase="2">
+									<verse xml:id="m-701" n="1">
+										<syl xml:id="m-702" wordpos="t">nour</syl>
+									</verse>
+								</note>
+								<rest xml:id="m-697" dur="brevis" dur.ges="2048p" />
+								<barLine xml:id="m-ffb21674-e95b-461d-ba5d-c40fdee4727b" />
+								<note xml:id="m-712" dur="longa" dur.ges="4096p" oct="4" oct.ges="3" pname="d" quality="i" num="3" numbase="2" plica="desc">
+									<verse xml:id="m-715" n="1">
+										<syl xml:id="m-716" wordpos="i">et</syl>
+									</verse>
+								</note>
+								<note xml:id="m-713" dur="brevis" dur.ges="2048p" oct="3" oct.ges="2" pname="b">
+									<verse xml:id="m-717" n="1">
+										<syl xml:id="m-718" wordpos="i">si</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-2155998a-c513-45d8-9d41-ea227d5e3ade" />
+								<note xml:id="m-736" dur="longa" dur.ges="6144p" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-737" n="1">
+										<syl xml:id="m-738" wordpos="i">truev</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-6e3b3641-c835-4ed0-8807-a21796e4d2c6" />
+								<note xml:id="m-758" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-760" n="1">
+										<syl xml:id="m-761" wordpos="i">on</syl>
+									</verse>
+								</note>
+								<note xml:id="m-759" artic="stop" dur="brevis" dur.ges="4096p" oct="4" oct.ges="3" pname="c" quality="a" num="1" numbase="2">
+									<verse xml:id="m-762" n="1">
+										<syl xml:id="m-763" wordpos="i">bien</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-9257c8de-0758-4ac8-920c-6ac5a8a963b0" />
+								<note xml:id="m-790" dur="longa" dur.ges="6144p" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-804" n="1">
+										<syl xml:id="m-805" wordpos="i">en</syl>
+									</verse>
+								</note>
+								<dot xml:id="m-ceb1160d-2291-4156-a36f-cf82e48db1f6" />
+								<barLine xml:id="m-d2b5ed14-b965-4b04-88df-ca104003aed4" />
+								<note xml:id="m-801" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-806" n="1">
+										<syl xml:id="m-807" wordpos="m">tres</syl>
+									</verse>
+								</note>
+								<note xml:id="m-803" artic="stop" dur="brevis" dur.ges="4096p" oct="3" oct.ges="2" pname="b" quality="a" num="1" numbase="2">
+									<verse xml:id="m-808" n="1">
+										<syl xml:id="m-809" wordpos="t">deus</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-9a80371f-4c06-4863-9b4b-c5ac426033a1" />
+								<note xml:id="m-845" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="a">
+									<verse xml:id="m-848" n="1">
+										<syl xml:id="m-849" wordpos="i">de</syl>
+									</verse>
+								</note>
+								<note xml:id="m-846" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="g" quality="major" num="1" numbase="2">
+									<verse xml:id="m-850" n="1">
+										<syl xml:id="m-851" wordpos="i">men</syl>
+									</verse>
+								</note>
+								<note xml:id="m-847" dur="longa" dur.ges="4096p" oct="3" oct.ges="2" pname="a" quality="i" num="3" numbase="2">
+									<verse xml:id="m-852" n="1">
+										<syl xml:id="m-853" wordpos="t">re</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-073d97e5-16f7-4f4d-9b40-d9b8441b492f" />
+								<note xml:id="m-885" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-890" n="1">
+										<syl xml:id="m-891" wordpos="i">feur</syl>
+									</verse>
+								</note>
+								<note xml:id="m-886" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-892" n="1">
+										<syl xml:id="m-893" wordpos="i">pour</syl>
+									</verse>
+								</note>
+								<note xml:id="m-888" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-894" n="1">
+										<syl xml:id="m-895" wordpos="i">ho</syl>
+									</verse>
+								</note>
+								<note xml:id="m-889" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="b" quality="major" num="1" numbase="2">
+									<verse xml:id="m-896" n="1">
+										<syl xml:id="m-897" wordpos="t">mes</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-89cda2b1-edc5-445b-991b-ad133af3ab1f" />
+								<note xml:id="m-928" dur="longa" dur.ges="4096p" oct="3" oct.ges="2" pname="a" quality="i" num="3" numbase="2">
+									<verse xml:id="m-947" n="1">
+										<syl xml:id="m-948" wordpos="i">de</syl>
+									</verse>
+								</note>
+								<note xml:id="m-930" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="b">
+									<verse xml:id="m-949" n="1">
+										<syl xml:id="m-950" wordpos="m">si</syl>
+									</verse>
+								</note>
+								<note xml:id="m-931" dur="semibrevis" dur.ges="1024p" oct="4" oct.ges="3" pname="c" quality="major" num="1" numbase="2">
+									<accid xml:id="m-932" accid="s" />
+								</note>
+								<barLine xml:id="m-3206c726-1bcd-4083-9603-0fd805ed4f93" />
+								<note xml:id="m-946" dur="longa" dur.ges="6144p" oct="4" oct.ges="3" pname="d">
+									<verse xml:id="m-951" n="1">
+										<syl xml:id="m-952" wordpos="t">teus.</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-a354b3a6-02f7-42b6-b3a5-8b71932f4056" />
+							</layer>
+						</staff>
+						<staff xml:id="m-55" n="3">
+							<layer xml:id="m-56" n="1">
+								<note xml:id="m-57" dur="longa" dur.ges="6144p" oct="3" oct.ges="2" pname="f">
+									<verse xml:id="m-90" n="1">
+										<syl xml:id="m-91" wordpos="i">Fre</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-9363537a-a66a-4906-a660-83a01cf18a90" />
+								<note xml:id="m-88" dur="brevis" dur.ges="2048p" oct="3" oct.ges="2" pname="g">
+									<verse xml:id="m-92" n="1">
+										<syl xml:id="m-93" wordpos="t">se</syl>
+									</verse>
+								</note>
+								<note xml:id="m-89" artic="stop" dur="brevis" dur.ges="4096p" oct="3" oct.ges="2" pname="a" quality="a" num="1" numbase="2">
+									<verse xml:id="m-144" n="1">
+										<syl xml:id="m-145" wordpos="i">nou</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-21e9b5a9-841e-4dbc-a89c-51344c361212" />
+								<note xml:id="m-116" dur="longa" dur.ges="6144p" oct="3" oct.ges="2" pname="g">
+									<verse xml:id="m-146" n="1">
+										<syl xml:id="m-147" wordpos="m">ve</syl>
+									</verse>
+								</note>
+								<dot xml:id="m-ceea6751-ca08-45dc-8742-e496ee69e581" />
+								<barLine xml:id="m-f635b8fc-a82c-4cac-a02c-61dbf7360891" />
+								<note xml:id="m-142" dur="brevis" dur.ges="2048p" oct="3" oct.ges="2" pname="a">
+									<verse xml:id="m-148" n="1">
+										<syl xml:id="m-149" wordpos="t">le</syl>
+									</verse>
+								</note>
+								<rest xml:id="m-143" dur="longa" dur.ges="4096p" EVENTUALDUR="2B" num="3" numbase="2" />
+								<barLine xml:id="m-62049445-9ada-4376-97d7-934276aa54fd" />
+								<note xml:id="m-177" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="a">
+									<verse xml:id="m-181" n="1">
+										<syl xml:id="m-182" wordpos="i">mue</syl>
+									</verse>
+								</note>
+								<note xml:id="m-179" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="b" quality="major" num="1" numbase="2">
+									<verse xml:id="m-183" n="1">
+										<syl xml:id="m-184" wordpos="t">re</syl>
+									</verse>
+								</note>
+								<note xml:id="m-180" dur="longa" dur.ges="4096p" oct="4" oct.ges="3" pname="c" quality="i" num="3" numbase="2">
+									<verse xml:id="m-212" n="1">
+										<syl xml:id="m-213" wordpos="i">fran</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-b7115bc5-4670-4976-8635-2959f8d1f659" />
+								<note xml:id="m-207" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-214" n="1">
+										<syl xml:id="m-215" wordpos="t">ce</syl>
+									</verse>
+								</note>
+								<note xml:id="m-208" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="b">
+									<verse xml:id="m-216" n="1">
+										<syl xml:id="m-217" wordpos="i">mue</syl>
+									</verse>
+								</note>
+								<note xml:id="m-209" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="a" quality="major" num="1" numbase="2">
+									<verse xml:id="m-218" n="1">
+										<syl xml:id="m-219" wordpos="t">re</syl>
+									</verse>
+								</note>
+								<note xml:id="m-210" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="a">
+									<verse xml:id="m-220" n="1">
+										<syl xml:id="m-221" wordpos="i">mue</syl>
+									</verse>
+								</note>
+								<note xml:id="m-211" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="b" quality="major" num="1" numbase="2">
+									<verse xml:id="m-222" n="1">
+										<syl xml:id="m-223" wordpos="t">re</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-8e7ad44a-e996-43a0-8ba5-7dc5a6602184" />
+								<note xml:id="m-249" dur="longa" dur.ges="6144p" oct="3" oct.ges="2" pname="a">
+									<verse xml:id="m-270" n="1">
+										<syl xml:id="m-271" wordpos="i">fran</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-94315ae6-7fda-4027-802d-5230bd543c1a" />
+								<note xml:id="m-268" dur="longa" dur.ges="4096p" oct="3" oct.ges="2" pname="g" quality="i" num="3" numbase="2">
+									<verse xml:id="m-272" n="1">
+										<syl xml:id="m-273" wordpos="t">ce</syl>
+									</verse>
+								</note>
+								<rest xml:id="m-269" dur="brevis" dur.ges="2048p" />
+								<barLine xml:id="m-0bc1450e-f10b-4919-8b4f-c879122c321f" />
+								<note xml:id="m-283" dur="longa" dur.ges="6144p" oct="3" oct.ges="2" pname="f">
+									<verse xml:id="m-316" n="1">
+										<syl xml:id="m-317" wordpos="i">fre</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-3b135799-f9ac-4627-9eb3-36e990b09961" />
+								<note xml:id="m-314" dur="brevis" dur.ges="2048p" oct="3" oct.ges="2" pname="g">
+									<verse xml:id="m-318" n="1">
+										<syl xml:id="m-319" wordpos="t">se</syl>
+									</verse>
+								</note>
+								<note xml:id="m-315" artic="stop" dur="brevis" dur.ges="4096p" oct="3" oct.ges="2" pname="a" quality="a" num="1" numbase="2">
+									<verse xml:id="m-369" n="1">
+										<syl xml:id="m-370" wordpos="i">nou</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-e41d5fe8-f817-4a2a-8c42-dfb2efa74626" />
+								<note xml:id="m-342" dur="longa" dur.ges="6144p" oct="3" oct.ges="2" pname="g">
+									<verse xml:id="m-371" n="1">
+										<syl xml:id="m-372" wordpos="m">ve</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-09eafd2c-59d5-48ec-bb3f-6c1fb9155452" />
+								<note xml:id="m-367" dur="brevis" dur.ges="2048p" oct="3" oct.ges="2" pname="a">
+									<verse xml:id="m-373" n="1">
+										<syl xml:id="m-374" wordpos="t">le</syl>
+									</verse>
+								</note>
+								<rest xml:id="m-368" dur="longa" dur.ges="4096p" EVENTUALDUR="2B" num="3" numbase="2" />
+								<barLine xml:id="m-63dbeea4-5b9b-4e06-bfd5-49dd9103d55f" />
+								<note xml:id="m-401" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="a">
+									<verse xml:id="m-404" n="1">
+										<syl xml:id="m-405" wordpos="i">mue</syl>
+									</verse>
+								</note>
+								<note xml:id="m-402" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="b" quality="major" num="1" numbase="2">
+									<verse xml:id="m-406" n="1">
+										<syl xml:id="m-407" wordpos="t">re</syl>
+									</verse>
+								</note>
+								<note xml:id="m-403" dur="longa" dur.ges="4096p" oct="4" oct.ges="3" pname="c" quality="i" num="3" numbase="2">
+									<verse xml:id="m-437" n="1">
+										<syl xml:id="m-438" wordpos="i">fran</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-7e3b2070-b8c1-4d74-928c-54ef5c2b8e08" />
+								<note xml:id="m-432" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-439" n="1">
+										<syl xml:id="m-440" wordpos="t">ce</syl>
+									</verse>
+								</note>
+								<note xml:id="m-433" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="b">
+									<verse xml:id="m-441" n="1">
+										<syl xml:id="m-442" wordpos="i">mue</syl>
+									</verse>
+								</note>
+								<note xml:id="m-434" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="a" quality="major" num="1" numbase="2">
+									<verse xml:id="m-443" n="1">
+										<syl xml:id="m-444" wordpos="t">re</syl>
+									</verse>
+								</note>
+								<note xml:id="m-435" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="a">
+									<verse xml:id="m-445" n="1">
+										<syl xml:id="m-446" wordpos="i">mue</syl>
+									</verse>
+								</note>
+								<note xml:id="m-436" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="b" quality="major" num="1" numbase="2">
+									<verse xml:id="m-447" n="1">
+										<syl xml:id="m-448" wordpos="t">re</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-ae34b971-51ea-44d3-85be-e6e813394140" />
+								<note xml:id="m-479" dur="longa" dur.ges="6144p" oct="3" oct.ges="2" pname="a">
+									<verse xml:id="m-497" n="1">
+										<syl xml:id="m-498" wordpos="i">fran</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-5bd4fafd-dbfb-437e-a123-8ddbd7e0f3a1" />
+								<note xml:id="m-495" dur="longa" dur.ges="4096p" oct="3" oct.ges="2" pname="g" quality="i" num="3" numbase="2">
+									<verse xml:id="m-499" n="1">
+										<syl xml:id="m-500" wordpos="t">ce</syl>
+									</verse>
+								</note>
+								<rest xml:id="m-496" dur="brevis" dur.ges="2048p" />
+								<barLine xml:id="m-83de32f7-c0c4-45d4-9c43-28918582ec95" />
+								<note xml:id="m-522" dur="longa" dur.ges="6144p" oct="3" oct.ges="2" pname="f">
+									<verse xml:id="m-553" n="1">
+										<syl xml:id="m-554" wordpos="i">fre</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-7212d069-db54-4a55-ad09-095207f6b17f" />
+								<note xml:id="m-551" dur="brevis" dur.ges="2048p" oct="3" oct.ges="2" pname="g">
+									<verse xml:id="m-555" n="1">
+										<syl xml:id="m-556" wordpos="t">se</syl>
+									</verse>
+								</note>
+								<note xml:id="m-552" artic="stop" dur="brevis" dur.ges="4096p" oct="3" oct.ges="2" pname="a" quality="a" num="1" numbase="2">
+									<verse xml:id="m-609" n="1">
+										<syl xml:id="m-610" wordpos="i">nou</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-6d612e8d-8839-4dd9-b5ed-a9a55b610528" />
+								<note xml:id="m-576" dur="longa" dur.ges="6144p" oct="3" oct.ges="2" pname="g">
+									<verse xml:id="m-611" n="1">
+										<syl xml:id="m-612" wordpos="m">ve</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-b667eeea-42fe-4eb1-b105-d03dc438dd1e" />
+								<note xml:id="m-606" dur="brevis" dur.ges="2048p" oct="3" oct.ges="2" pname="a">
+									<verse xml:id="m-613" n="1">
+										<syl xml:id="m-614" wordpos="t">le</syl>
+									</verse>
+								</note>
+								<rest xml:id="m-607" dur="brevis" dur.ges="2048p" />
+								<rest xml:id="m-608" dur="brevis" dur.ges="2048p" />
+								<barLine xml:id="m-ca711e60-82ab-4bf5-8809-649799734867" />
+								<note xml:id="m-637" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="a">
+									<verse xml:id="m-640" n="1">
+										<syl xml:id="m-641" wordpos="i">mue</syl>
+									</verse>
+								</note>
+								<note xml:id="m-638" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="b" quality="major" num="1" numbase="2">
+									<verse xml:id="m-642" n="1">
+										<syl xml:id="m-643" wordpos="t">re</syl>
+									</verse>
+								</note>
+								<note xml:id="m-639" dur="longa" dur.ges="4096p" oct="4" oct.ges="3" pname="c" quality="i" num="3" numbase="2">
+									<verse xml:id="m-672" n="1">
+										<syl xml:id="m-673" wordpos="i">fran</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-63cf3b46-1b48-4612-b0d3-dfdc48b735ef" />
+								<note xml:id="m-667" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-674" n="1">
+										<syl xml:id="m-675" wordpos="t">ce</syl>
+									</verse>
+								</note>
+								<note xml:id="m-668" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="b">
+									<verse xml:id="m-676" n="1">
+										<syl xml:id="m-677" wordpos="i">mue</syl>
+									</verse>
+								</note>
+								<note xml:id="m-669" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="a" quality="major" num="1" numbase="2">
+									<verse xml:id="m-678" n="1">
+										<syl xml:id="m-679" wordpos="t">re</syl>
+									</verse>
+								</note>
+								<note xml:id="m-670" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="a">
+									<verse xml:id="m-680" n="1">
+										<syl xml:id="m-681" wordpos="i">mue</syl>
+									</verse>
+								</note>
+								<note xml:id="m-671" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="b" quality="major" num="1" numbase="2">
+									<verse xml:id="m-682" n="1">
+										<syl xml:id="m-683" wordpos="t">re</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-c2bf1cee-3d97-4e68-80d0-747823a307b7" />
+								<note xml:id="m-705" dur="longa" dur.ges="6144p" oct="3" oct.ges="2" pname="a">
+									<verse xml:id="m-723" n="1">
+										<syl xml:id="m-724" wordpos="i">fran</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-0c9a05e3-2e4e-44e3-9d86-f51428fa9d55" />
+								<note xml:id="m-721" dur="longa" dur.ges="4096p" oct="3" oct.ges="2" pname="g" quality="i" num="3" numbase="2">
+									<verse xml:id="m-725" n="1">
+										<syl xml:id="m-726" wordpos="t">ce</syl>
+									</verse>
+								</note>
+								<rest xml:id="m-722" dur="brevis" dur.ges="2048p" />
+								<barLine xml:id="m-f4438110-34fd-45b7-862e-9ee52fa49b8e" />
+								<note xml:id="m-741" dur="longa" dur.ges="6144p" oct="3" oct.ges="2" pname="f">
+									<verse xml:id="m-768" n="1">
+										<syl xml:id="m-769" wordpos="i">fre</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-35a33039-911d-4b1b-9ba9-038b9bf08ef0" />
+								<note xml:id="m-766" dur="brevis" dur.ges="2048p" oct="3" oct.ges="2" pname="g">
+									<verse xml:id="m-770" n="1">
+										<syl xml:id="m-771" wordpos="t">se</syl>
+									</verse>
+								</note>
+								<note xml:id="m-767" artic="stop" dur="brevis" dur.ges="4096p" oct="3" oct.ges="2" pname="a" quality="a" num="1" numbase="2">
+									<verse xml:id="m-814" n="1">
+										<syl xml:id="m-815" wordpos="i">nou</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-2563e645-9022-45d9-a1ca-e7bc49cfe709" />
+								<note xml:id="m-793" dur="longa" dur.ges="6144p" oct="3" oct.ges="2" pname="g">
+									<verse xml:id="m-816" n="1">
+										<syl xml:id="m-817" wordpos="m">ve</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-807ad7c4-24ed-4f23-a069-4a7b2fe1e147" />
+								<note xml:id="m-812" dur="brevis" dur.ges="2048p" oct="3" oct.ges="2" pname="a">
+									<verse xml:id="m-818" n="1">
+										<syl xml:id="m-819" wordpos="t">le</syl>
+									</verse>
+								</note>
+								<rest xml:id="m-813" dur="longa" dur.ges="4096p" EVENTUALDUR="2B" num="3" numbase="2" />
+								<barLine xml:id="m-0e4f1cd6-bb31-446c-9b50-65e3c136e173" />
+								<note xml:id="m-856" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="a">
+									<verse xml:id="m-859" n="1">
+										<syl xml:id="m-860" wordpos="i">mue</syl>
+									</verse>
+								</note>
+								<note xml:id="m-857" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="b" quality="major" num="1" numbase="2">
+									<verse xml:id="m-861" n="1">
+										<syl xml:id="m-862" wordpos="t">re</syl>
+									</verse>
+								</note>
+								<note xml:id="m-858" dur="longa" dur.ges="4096p" oct="4" oct.ges="3" pname="c" quality="i" num="3" numbase="2">
+									<verse xml:id="m-905" n="1">
+										<syl xml:id="m-906" wordpos="i">fran</syl>
+									</verse>
+								</note>
+								<barLine xml:id="m-1d6cf495-5325-49dd-9ff7-5f32747ec7f8" />
+								<note xml:id="m-900" dur="brevis" dur.ges="2048p" oct="4" oct.ges="3" pname="c">
+									<verse xml:id="m-907" n="1">
+										<syl xml:id="m-908" wordpos="t">ce</syl>
+									</verse>
+								</note>
+								<note xml:id="m-901" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="b" />
+								<note xml:id="m-902" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="a" quality="major" num="1" numbase="2" />
+								<note xml:id="m-903" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="a" />
+								<note xml:id="m-904" dur="semibrevis" dur.ges="1024p" oct="3" oct.ges="2" pname="b" quality="major" num="1" numbase="2" />
+								<barLine xml:id="m-fdbaee61-1ab5-44ee-a4dd-b24392e7e576" />
+								<note xml:id="m-935" dur="longa" dur.ges="6144p" oct="3" oct.ges="2" pname="a" />
+								<barLine xml:id="m-ef89ce0b-4761-4172-ba02-f5bdd989824e" />
+								<note xml:id="m-955" dur="longa" dur.ges="6144p" oct="3" oct.ges="2" pname="g" />
+								<barLine xml:id="m-e207b9b7-657e-4cf5-abfe-b26850f527ef" />
+							</layer>
+						</staff>
+					</section>
+				</score>
+			</mdiv>
+		</body>
+	</music>
+</mei>
