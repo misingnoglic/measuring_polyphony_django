@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
-from viewer.models import Composition, SourceRelationship
+from viewer.models import Composition, SourceRelationship, FolioPage
 from viewer.logic import mei_to_svg
 
 
@@ -30,6 +30,8 @@ class CompositionDetailView(DetailView):
         if self.object.mens_mei_file:
             svg = mei_to_svg(self.object.mens_mei_file.path)
         context['svg'] = svg
-        folios = SourceRelationship.objects.filter(composition=self.object, source=self.object.main_source)
+        folios = FolioPage.objects.filter(source_relationship__composition=self.object, source_relationship__primary=True)
         context['folios'] = folios
+        conc_sources = SourceRelationship.objects.filter(composition=self.object, primary=False)
+        context['conc_sources'] = conc_sources
         return context

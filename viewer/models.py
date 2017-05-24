@@ -21,9 +21,11 @@ class Source(models.Model):
     signal = models.CharField(max_length=10)
     iiif_manifest = models.URLField(blank=True, null=True)
     diamm_source = models.URLField(blank=True, null=True)
-    diamm_source = models.CharField(max_length=100)
     def __str__(self):
         return self.name
+
+    class Meta:
+        ordering = ('name',)
 
 
 class Clef(models.Model):
@@ -32,17 +34,36 @@ class Clef(models.Model):
     def __str__(self):
         return "{}{}".format(self.letter, self.number)
 
+    class Meta:
+        ordering = ('letter', 'number')
+
 
 class SourceRelationship(models.Model):
     source = models.ForeignKey(Source)
-    folio_number = models.CharField(max_length=20, null=True, blank=True)
     composition = models.ForeignKey("Composition")
     primary = models.BooleanField(default=False)
     text_only = models.BooleanField(default=False)
-    image = models.ImageField(upload_to="images/", null=True, blank=True)
     diamm_item_id = models.IntegerField(blank=True, null=True)
     def __str__(self):
-        return "{} - Folio #{}".format(self.source.name, self.folio_number)
+        return "{} - {}".format(self.source.name, self.composition)
+
+    class Meta:
+        ordering = ('source','composition')
+
+
+class FolioPage(models.Model):
+    folio_number = models.CharField(max_length=20)
+    source_relationship = models.ForeignKey(SourceRelationship)
+    image = models.ImageField(upload_to="images/", null=True, blank=True)
+    order_number = models.PositiveSmallIntegerField()
+
+    def __str__(self):
+        return f"{self.source_relationship} - {self.folio_number}"
+
+    class Meta:
+        ordering = ('source_relationship','-folio_number')
+
+
 
 
 class Edition(models.Model):
@@ -50,13 +71,20 @@ class Edition(models.Model):
     def __str__(self):
         return self.author
 
+    class Meta:
+        ordering = ('author',)
+
 class ProjectMember(models.Model):
     initials = models.CharField(max_length=5)
     name = models.CharField(max_length=20)
     def __str__(self):
         return "{}".format(self.initials)
 
+    class Meta:
+        ordering = ('initials',)
+
 class Composition(models.Model):
+    is_live = models.BooleanField(default=True)
     triplum_incipit = models.CharField(max_length=200)
     motetus_incipit = models.CharField(max_length=200)
     tenor_incipit = models.CharField(max_length=200, blank=True)
@@ -87,6 +115,28 @@ class Composition(models.Model):
     notes_on_motet_texts = models.CharField(max_length=500, blank=True)
     variants_description = models.CharField(max_length=2000, blank=True)
     additional_comments_on_database_record = models.CharField(max_length=500, blank=True)
+
+    def fullname(self):
+        s = ""
+        if self.triplum_incipit:
+            s += self.triplum_incipit
+        if self.motetus_incipit:
+            s += "/" + self.motetus_incipit
+        if self.tenor_incipit:
+            s += "/" + self.tenor_incipit
+        if self.quadruplum_incipit:
+            s += "/" + self.quadruplum_incipit
+
+        return s
+
+    def composerfull(self):
+        if self.attributed_composer:
+            return self.composer.name + " (attrib)"
+        else:
+            return self.composer.name
+
+    class Meta:
+        ordering = ('triplum_incipit','motetus_incipit')
 
     def __str__(self):
         return f"{self.triplum_incipit}/{self.motetus_incipit}"

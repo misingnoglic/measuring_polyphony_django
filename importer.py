@@ -6,6 +6,8 @@ import progressbar
 
 import os
 os.system("del db.sqlite3")
+os.system("del viewer\\migrations\\0*")
+
 os.system("python manage.py makemigrations")
 os.system("python manage.py migrate")
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "measuring_polyphony.settings")
@@ -158,9 +160,11 @@ for line in bar(ss):
     np.save()
 
     folio_nums = line["Folio_numbers"].split(",")
-    for n in folio_nums:
-        sr = SourceRelationship(source=main_source, folio_number=n.strip(), composition = np, primary=True)
-        sr.save()
+    sr = SourceRelationship(source=main_source, composition=np, primary=True)
+    sr.save()
+    for i,n in enumerate(folio_nums,1):
+        fr = FolioPage(folio_number=n, order_number=i, source_relationship=sr)
+        fr.save()
 
     conc_sources = line["Concordant_Sources"].split(",")
     for conc in conc_sources:

@@ -5,6 +5,8 @@
 # https://github.com/rism-ch/verovio/issues/490
 
 import verovio
+from django.conf import settings
+
 
 
 def load_mei_tk(mensural=True):
