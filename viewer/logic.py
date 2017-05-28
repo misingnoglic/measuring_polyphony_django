@@ -6,13 +6,14 @@
 
 import verovio
 from django.conf import settings
+import secrets
 
 
 
 def load_mei_tk(mensural=True):
     tk = verovio.toolkit(False)
     # The path for my resource folder - probably will change on server
-    tk.setResourcePath(r"C:\Users\misin\OneDrive\Documents\GitHub\verovio\data")
+    tk.setResourcePath(secrets.font_path)
     # Suggested by developer on github for mensural MEI files
     if mensural:
         tk.setNoLayout(True)

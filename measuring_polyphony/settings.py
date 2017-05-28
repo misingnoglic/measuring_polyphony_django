@@ -24,9 +24,9 @@ import secrets
 SECRET_KEY = secrets.SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = secrets.debug
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['http://174.138.49.237']
 
 
 # Application definition
@@ -125,10 +125,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+
 
 MEDIA_ROOT = 'media/'
 
-MEDIA_URL = 'http://localhost:8000/media/'
+MEDIA_URL = '/media/'
 
 
 
@@ -137,7 +139,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             # insert your TEMPLATE_DIRS here
-            r'C:\Users\misin\PycharmProjects\measuring_polyphony\django_project\measuring_polyphony\templates'
+            'templates'
         ],
         'APP_DIRS': True,
         'OPTIONS': {
