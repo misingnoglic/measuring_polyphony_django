@@ -51,7 +51,10 @@
 <b>Edition(s)</b><br>
             {{ object.edition }}
 <br>
+            <b>Playback</b><br>
 
+            <a href="#" onClick="MIDIjs.play('{% url 'composition-midi' object.pk %}');">Play MIDI</a><br>
+            <a href="#" onClick="MIDIjs.stop();">Stop MIDI Playback</a><br>
 
 <b>Downloads</b>
 <ul style="list-style: none; padding: 0; margin: 0">
