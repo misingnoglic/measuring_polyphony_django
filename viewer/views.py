@@ -12,9 +12,16 @@ from viewer.logic import mei_to_svg
 def hello(request):
     return render(request, "index.html")
 
+
 def iiif(request, pk):
     f = Composition.objects.get(pk=pk)
     return render(request, 'iiif.html', context={'url': f.main_source.iiif_manifest})
+
+
+def svg(request, pk):
+    piece = Composition.objects.get(pk=pk)
+    svg = mei_to_svg(piece.mens_mei_file.path)
+    return HttpResponse(svg, content_type="image/svg+xml")
 
 
 class CompositionListView(ListView):
@@ -27,9 +34,6 @@ class CompositionDetailView(DetailView):
     def get_context_data(self, **kwargs):
         context = super(CompositionDetailView, self).get_context_data(**kwargs)
         svg = ""
-        if self.object.mens_mei_file:
-            svg = mei_to_svg(self.object.mens_mei_file.path)
-        context['svg'] = svg
         folios = FolioPage.objects.filter(source_relationship__composition=self.object, source_relationship__primary=True)
         context['folios'] = folios
         conc_sources = SourceRelationship.objects.filter(composition=self.object, primary=False)

@@ -11,6 +11,9 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="{% static "introspect/assets/css/main.css" %}" />
+        {% block head %}{% endblock %}
+
+
 	</head>
 	<body>
 
@@ -66,6 +69,8 @@
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
 			<script src="{% static "introspect/assets/js/util.js" %}"></script>
 			<script src="{% static "introspect/assets/js/main.js" %}"></script>
+            <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
 
 	</body>
 </html>
