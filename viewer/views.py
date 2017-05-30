@@ -18,9 +18,14 @@ def iiif(request, pk):
     return render(request, 'iiif.html', context={'url': f.main_source.iiif_manifest})
 
 
-def svg(request, pk):
+def svg_mens(request, pk):
     piece = Composition.objects.get(pk=pk)
     svg_file = mei_to_svg(piece.mens_mei_file.path)
+    return HttpResponse(svg_file, content_type="image/svg+xml")
+
+def svg_cmn(request, pk):
+    piece = Composition.objects.get(pk=pk)
+    svg_file = mei_to_svg(piece.cmn_mei_file.path, mensural=False)
     return HttpResponse(svg_file, content_type="image/svg+xml")
 
 
