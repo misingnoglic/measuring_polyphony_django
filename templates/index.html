@@ -1,12 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Measuring Polyphony</title>
-</head>
-<body>
-    <h1>Measuring Polyphony Home Page</h1>
-    <p>This project aims to...</p>
-    <a href={%  url 'composition-list' %}>Index of Pieces</a>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}Measuring Polyphony{% endblock %}
+
+{% block content %}
+    <!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<h1>Measuring Polyphony: <span>A project which aims<br />
+					to...</span></h1>
+					<ul class="actions">
+						<li><a href="{% url 'composition-list' %}" class="button alt">View Composition List</a></li>
+					</ul>
+				</div>
+			</section>
+
+    		<!-- One -->
+			<section id="one">
+				<div class="inner">
+					<header>
+						<h2>Details</h2>
+					</header>
+					<p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscin sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu, erisque hendrerit tellus. Integer sagittis. Vivamus a mauris eget arcu gravida tristique. Nunc iaculis mi in ante.</p>
+					<ul class="actions">
+						<li><a href="#" class="button alt">Learn More</a></li>
+					</ul>
+				</div>
+			</section>
+{% endblock %}

@@ -1,23 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Motets</title>
-</head>
-<body>
 
-<h1>Motets</h1>
-<ul>
-{% for composition in object_list %}
-    <a href="{% url 'composition-detail' composition.pk %}">
-        <li>{{ composition.triplum_incipit }} - {{ composition.motetus_incipit }}{% if composition.tenor_incipit %} - {{ composition.tenor_incipit }}{% endif %}: {{ composition.composer.name }}</li>
-    </a>
-{% empty %}
-    <li>No motets yet.</li>
-{% endfor %}
-</ul>
+{% extends "../base.html" %}
+{% block title %}Composition List{% endblock %}
+
+{% block content %}
+    <section>
+        <div class="table-wrapper inner">
+        <table class="alt">
+            <thead>
+                        <tr>
+                            <th>Triplum</th>
+                            <th>Motetus</th>
+                            <th>Tenor</th>
+                            <th>Composer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+            {% for composition in object_list %}
 
 
-</body>
-</html>
-
+                    <tr>
+                        <td>
+                            <a href="{% url 'composition-detail' composition.pk %}">{{ composition.triplum_incipit }}</a>
+                        </td>
+                        <td>{{ composition.motetus_incipit }}</td>
+                        <td>{{ composition.tenor_incipit }}</td>
+                        <td>{{ composition.composer.name }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </section>
+{% endblock %}

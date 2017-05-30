@@ -1,20 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Piece Detail</title>
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+{% extends "../base.html" %}
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+{% block title %}{{ object }}{% endblock %}
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-</head>
-
-<body>
+{% block content %}
+    <section id="main">
+    <div class="inner">
 <h1>{{ object.fullname }}</h1>
 <br>
 <b>{{ object.composerfull }}</b>
@@ -38,8 +28,9 @@ Concordant Sources:
     <li>{{ source.source }}</li>
 {% endfor %}
 </ul>
+    <br>
 {% endif %}
-<br>
+
 Edition: {{ object.edition }}
 <br>
 {% if object.main_source.iiif_manifest %}
@@ -59,9 +50,10 @@ Downloads:
 
 </ul>
 
+</div>
+    </section>
 
-
-{{ svg|safe }}
-
-</body>
-</html>
+    <section id="content">
+    <div>{{ svg|safe }}</div>
+    </section>
+{% endblock %}
