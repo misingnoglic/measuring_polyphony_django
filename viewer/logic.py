@@ -29,3 +29,9 @@ def mei_to_svg(file_path: str):
     tk.loadFile(file_path)
     svg_string = tk.renderToSvg(1)
     return svg_string
+
+def mei_to_midi(file_path: str):
+    tk = load_mei_tk()
+    tk.loadFile(file_path)
+    midi = tk.renderToMidi()
+    return midi
