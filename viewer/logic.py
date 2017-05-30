@@ -7,6 +7,7 @@
 import verovio
 from django.conf import settings
 import secrets
+import base64
 
 
 
@@ -32,6 +33,13 @@ def mei_to_svg(file_path: str):
 
 def mei_to_midi(file_path: str):
     tk = load_mei_tk()
-    tk.loadFile(file_path)
+    mei = open(file_path).read()
+    s = "scoreDef"
+    i = mei.find(s)
+    mei = mei[:i+len(s)] + ''' midi.bpm="800" '''+mei[i+len(s):]
+    tk.loadData(mei)
     midi = tk.renderToMidi()
-    return midi
+
+    data = base64.b64decode(midi)
+
+    return data

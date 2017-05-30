@@ -26,6 +26,7 @@
             <b>{{ object.main_source }}</b>
 {% if folios %}
 , fol(s). {% for folio in folios %}{{ folio.folio_number }} {{ forloop.last|yesno:",&#44;"|safe }} {% endfor %}
+    {% comment %} This weird syntax is for getting rid of the trailing comma{% endcomment %}
 {% endif %}
 <br>
 {% if object.main_source.diamm_source %}
@@ -56,11 +57,15 @@
 <ul style="list-style: none; padding: 0; margin: 0">
     {% if object.mens_mei_file %}
         <a href="{{ object.mens_mei_file.url }}"><li>Mensural MEI</li></a>
+        <a href="{% url 'composition-svg' object.pk %}" target="_blank"><li>SVG for Score</li></a>
     {% endif %}
 
     {% if object.cmn_mei_file %}
         <a href="{{ object.cmn_mei_file.url }}"><li>Common MEI</li></a>
+        <a href="{% url 'composition-midi' object.pk %}" target="_blank"><li>MIDI for Score</li></a>
+
     {% endif %}
+
 
 </ul>
     <section id="content">

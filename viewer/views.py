@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from viewer.models import Composition, SourceRelationship, FolioPage
-from viewer.logic import mei_to_svg
+from viewer.logic import mei_to_svg, mei_to_midi
 
 
 
@@ -20,8 +20,14 @@ def iiif(request, pk):
 
 def svg(request, pk):
     piece = Composition.objects.get(pk=pk)
-    svg = mei_to_svg(piece.mens_mei_file.path)
-    return HttpResponse(svg, content_type="image/svg+xml")
+    svg_file = mei_to_svg(piece.mens_mei_file.path)
+    return HttpResponse(svg_file, content_type="image/svg+xml")
+
+
+def midi(request, pk):
+    piece = Composition.objects.get(pk=pk)
+    midi_file = mei_to_midi(piece.cmn_mei_file.path)
+    return HttpResponse(midi_file, content_type="audio/mid")
 
 
 class CompositionListView(ListView):
