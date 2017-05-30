@@ -3,9 +3,17 @@
 {% block title %}Composition List{% endblock %}
 
 {% block content %}
+    <section id="one">
+    <div class="inner">
+    <header>
+        <h2>List of Compositions</h2>
+    </header>
+    <p>Click on the table headers to sort them</p>
+    </div>
+    </section>
     <section>
         <div class="table-wrapper inner">
-        <table class="alt">
+        <table class="alt sortable">
             <thead>
                         <tr>
                             <th>Triplum</th>
@@ -16,8 +24,6 @@
                     </thead>
                     <tbody>
             {% for composition in object_list %}
-
-
                     <tr>
                         <td>
                             <a href="{% url 'composition-detail' composition.pk %}">{{ composition.triplum_incipit }}</a>
@@ -31,4 +37,5 @@
             </table>
         </div>
     </section>
+
 {% endblock %}

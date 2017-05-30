@@ -4,42 +4,44 @@
 
 {% block content %}
     <section id="main">
-    <div class="inner">
-<h1>{{ object.fullname }}</h1>
+        <div class="inner">
+            <header>
+                <h2>{{ object.fullname }}</h2>
+            </header>
+<h3>{{ object.composerfull }}</h3>
+<b>Primary Source for this transcription</b>
 <br>
-<b>{{ object.composerfull }}</b>
-<br>
-Main Source:
-<br>
-{{ object.main_source }}
+            <b>{{ object.main_source }}</b>
 {% if folios %}
-- folios: {% for folio in folios %}{{ folio.folio_number }}, {% endfor %}
+, fol(s). {% for folio in folios %}{{ folio.folio_number }}, {% endfor %}
 {% endif %}
 <br>
 {% if object.main_source.diamm_source %}
-    <a href="{{ object.main_source.diamm_source }}">More info about source</a>
+    <a href="{{ object.main_source.diamm_source }} " target="_blank">Information about source</a>
+    <br>
+{% endif %}
+{% if object.main_source.iiif_manifest %}
+    <a href="{% url 'composition-iiif' object.pk %}" target="_blank">Manuscript Image of Source</a>
     <br>
 {% endif %}
 
 {% if conc_sources %}
-Concordant Sources:
-<ul>
+    <b>Concordant Sources</b>
+    <br>
 {% for source in conc_sources %}
-    <li>{{ source.source }}</li>
+    {{ source.source }},
 {% endfor %}
 </ul>
     <br>
 {% endif %}
 
-Edition: {{ object.edition }}
+<b>Edition(s)</b><br>
+            {{ object.edition }}
 <br>
-{% if object.main_source.iiif_manifest %}
-    <a href="{% url 'composition-iiif' object.pk %}">IIIF Link</a>
-    <br>
-{% endif %}
 
-Downloads:
-<ul>
+
+<b>Downloads</b>
+<ul style="list-style: none; padding: 0; margin: 0">
     {% if object.mens_mei_file %}
         <a href="{{ object.mens_mei_file.url }}"><li>Mensural MEI</li></a>
     {% endif %}
