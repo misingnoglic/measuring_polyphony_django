@@ -26,7 +26,7 @@ SECRET_KEY = secrets.SECRET_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = secrets.debug
 
-ALLOWED_HOSTS = ['174.138.49.237', '127.0.0.1']
+ALLOWED_HOSTS = ['174.138.49.237', '127.0.0.1', 'localhost']
 
 
 # Application definition
