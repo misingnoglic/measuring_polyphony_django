@@ -25,7 +25,7 @@
 <br>
             <b>{{ object.main_source }}</b>
 {% if folios %}
-, fol(s). {% for folio in folios %}{{ folio.folio_number }}, {% endfor %}
+, fol(s). {% for folio in folios %}{{ folio.folio_number }} {{ forloop.last|yesno:",&#44;"|safe }} {% endfor %}
 {% endif %}
 <br>
 {% if object.main_source.diamm_source %}
@@ -41,7 +41,7 @@
     <b>Concordant Sources</b>
     <br>
 {% for source in conc_sources %}
-    {{ source.source }},
+    {{ source.source }}{{ forloop.last|yesno:",&#44;"|safe }}
 {% endfor %}
 </ul>
     <br>
