@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+# All of the database models - converted into SQL by django.
 
 
 class Composer(models.Model):
@@ -64,8 +64,6 @@ class FolioPage(models.Model):
         ordering = ('source_relationship','-folio_number')
 
 
-
-
 class Edition(models.Model):
     author = models.CharField(max_length=20)
     def __str__(self):
@@ -73,6 +71,7 @@ class Edition(models.Model):
 
     class Meta:
         ordering = ('author',)
+
 
 class ProjectMember(models.Model):
     initials = models.CharField(max_length=5)
@@ -82,6 +81,7 @@ class ProjectMember(models.Model):
 
     class Meta:
         ordering = ('initials',)
+
 
 class Composition(models.Model):
     is_live = models.BooleanField(default=True)

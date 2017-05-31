@@ -7,39 +7,71 @@ from viewer.logic import mei_to_svg, mei_to_midi
 
 
 
-# Create your views here.
-
 def hello(request):
+    """
+    Renders the home page
+    :param request: 
+    :return: 
+    """
     return render(request, "index.html")
 
 
 def iiif(request, pk):
+    """
+    Renders the IIIF link for a piece with a manifest.json link 
+    :TODO: Return an error if there's no manifest.json link
+    :param request: 
+    :param pk: 
+    :return: 
+    """
     f = Composition.objects.get(pk=pk)
     return render(request, 'iiif.html', context={'url': f.main_source.iiif_manifest})
 
 
 def svg(request, pk):
+    """
+    Return the mensural SVG file as an HTTP Response
+    :param request: 
+    :param pk: 
+    :return: 
+    """
     piece = Composition.objects.get(pk=pk)
     svg_file = mei_to_svg(piece.mens_mei_file.path)
     return HttpResponse(svg_file, content_type="image/svg+xml")
 
 
 def midi(request, pk):
+    """
+    Return the midi as an HTTP response
+    :param request: 
+    :param pk: 
+    :return: 
+    """
     piece = Composition.objects.get(pk=pk)
     midi_file = mei_to_midi(piece.cmn_mei_file.path)
     return HttpResponse(midi_file, content_type="audio/mid")
 
 
 class CompositionListView(ListView):
+    """
+    View for listing the compositions - uses build in ListView
+    """
     model = Composition
 
 
 class CompositionDetailView(DetailView):
+    """
+    View for the composition detail page
+    """
     model = Composition
 
     def get_context_data(self, **kwargs):
+        """
+        Adds certain items to the context for rendering the detail page
+        :param kwargs: 
+        :return: 
+        """
         context = super(CompositionDetailView, self).get_context_data(**kwargs)
-        svg = ""
         folios = FolioPage.objects.filter(source_relationship__composition=self.object, source_relationship__primary=True)
         context['folios'] = folios
         conc_sources = SourceRelationship.objects.filter(composition=self.object, primary=False)
