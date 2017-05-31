@@ -2,7 +2,7 @@
 ## About
 This website is created to display the research of Karen Desmond at Brandeis University. It is built using Django with Python 3.6.
 
-## How to Install
+## How to Install (initial)
 
 0. Run the initial setup guide: https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04
 1. Install Python 3.6 on your machine
