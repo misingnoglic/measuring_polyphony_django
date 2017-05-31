@@ -6,7 +6,7 @@
 
 import verovio
 from django.conf import settings
-from secrets import font_path
+import secrets
 import base64
 
 
@@ -14,7 +14,7 @@ import base64
 def load_mei_tk(mensural=True):
     tk = verovio.toolkit(False)
     # The path for my resource folder - probably will change on server
-    tk.setResourcePath(font_path)
+    tk.setResourcePath(secrets.font_path)
     # Suggested by developer on github for mensural MEI files
     if mensural:
         tk.setNoLayout(True)
@@ -39,12 +39,12 @@ def add_bpm(file_path: str, bpm: int):
     mei = mei[:i + len(s)] + f''' midi.bpm="{bpm}" ''' + mei[i + len(s):]
     return mei
 
-
 def mei_to_midi(file_path: str, bpm=800):
     tk = load_mei_tk()
     mei = add_bpm(file_path, bpm)
     tk.loadData(mei)
     midi = tk.renderToMidi()
-    data = base64.b64decode(midi)
-    return data
 
+    data = base64.b64decode(midi)
+
+    return data
