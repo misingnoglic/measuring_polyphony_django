@@ -116,32 +116,5 @@
     map.setMaxBounds(bounds);
     </script>
 
-            <script type="text/javascript">
-
-            ///////////////////////////
-            /* Create the vrvToolkit */
-            ///////////////////////////
-            var vrvToolkit = new verovio.toolkit();
-            options = {
-                pageHeight: 2100,
-                pageWidth: window.screen.width*4,
-                ignoreLayout: 1,
-                border: 100,
-                scale: 50
-            };
-            vrvToolkit.setOptions(options)
-
-            ////////////////////////////////////
-            /* Load the file using a HTTP GET */
-            ////////////////////////////////////
-            $.ajax({
-                url: "{{ object.cmn_mei_file.url }}"
-                , dataType: "text"
-                , success: function(data) {
-                    var svg = vrvToolkit.renderData(data);
-                    $("#svg_output").html(svg);
-                }
-            });
-        </script>
 
 {% endblock %}
