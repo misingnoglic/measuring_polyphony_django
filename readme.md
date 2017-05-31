@@ -1,6 +1,6 @@
 # Measuring Polyphony: Django Project
 ## About
-This website is created to display the research of Karen Desmond at Brandeis University. It is built using Django with Python 3.6.
+This website is created to display the research of Professor Karen Desmond at Brandeis University. It is built using Django with Python 3.6.
 
 ## How to Install (initial)
 
