@@ -18,30 +18,25 @@ def load_mei_tk(mensural=True):
     # Suggested by developer on github for mensural MEI files
     if mensural:
         tk.setNoLayout(True)
-    else:
         #tk.setPageHeight(800)
-        #tk.setPageWidth(600)
-        pass
+        #tk.setPageWidth(2)
     tk.setFormat("mei")
     return tk
 
 
-def mei_to_svg(file_path: str, mensural=True):
-    tk = load_mei_tk(mensural)
+
+def mei_to_svg(file_path: str):
+    tk = load_mei_tk()
     tk.loadFile(file_path)
     svg_string = tk.renderToSvg(1)
     return svg_string
 
-def add_bpm(file_path: str, bpm: int):
+def mei_to_midi(file_path: str):
+    tk = load_mei_tk()
     mei = open(file_path).read()
     s = "scoreDef"
     i = mei.find(s)
-    mei = mei[:i + len(s)] + f''' midi.bpm="{bpm}" ''' + mei[i + len(s):]
-    return mei
-
-def mei_to_midi(file_path: str, bpm=800):
-    tk = load_mei_tk()
-    mei = add_bpm(file_path, bpm)
+    mei = mei[:i+len(s)] + ''' midi.bpm="800" '''+mei[i+len(s):]
     tk.loadData(mei)
     midi = tk.renderToMidi()
 

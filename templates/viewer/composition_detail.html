@@ -11,8 +11,6 @@
           margin-bottom: 10px;
         }
     </style>
-    <script src="http://www.verovio.org/javascript/develop/verovio-toolkit.js" type="text/javascript" ></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript" ></script>
 
 {% endblock %}
 
@@ -62,7 +60,7 @@
 <ul style="list-style: none; padding: 0; margin: 0">
     {% if object.mens_mei_file %}
         <a href="{{ object.mens_mei_file.url }}"><li>Mensural MEI</li></a>
-        <a href="{% url 'composition-svg-mens' object.pk %}" target="_blank"><li>SVG for Score</li></a>
+        <a href="{% url 'composition-svg' object.pk %}" target="_blank"><li>SVG for Score</li></a>
     {% endif %}
 
     {% if object.cmn_mei_file %}
@@ -74,25 +72,16 @@
 
 </ul>
     <section id="content">
-        <b>Mensural MEI File</b>
     <div>
-        <!--<img src="{% url 'composition-svg-mens' object.pk %}"> -->
+        <!--<img src="{% url 'composition-svg' object.pk %}"> -->
         <div id="image-map"></div>
     </div>
     </section>
 
-            <div id="svg_output"/>
-        </div>
-
-
-
-
-    </section>
-
-    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+            <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
     <script>
     // Using leaflet.js to pan and zoom a big image.
-    // Code from: http://kempe.net/blog/2014/06/14/leaflet-pan-zoom-image.html
+    // See also: http://kempe.net/blog/2014/06/14/leaflet-pan-zoom-image.html
     // create the slippy map
     var map = L.map('image-map', {
       minZoom: 0.5,
@@ -101,10 +90,10 @@
       zoom: 0.5,
       crs: L.CRS.Simple
     });
-    // dimensions of the image - modified for the SVG
+    // dimensions of the image
     var w = 16076,
         h = 837,
-        url = '{% url 'composition-svg-mens' object.pk %}';
+        url = '{% url 'composition-svg' object.pk %}';
     // calculate the edges of the image, in coordinate space
     var southWest = map.unproject([0, h], map.getMaxZoom()-1);
     var northEast = map.unproject([w, 0], map.getMaxZoom()-1);
@@ -116,32 +105,7 @@
     map.setMaxBounds(bounds);
     </script>
 
-            <script type="text/javascript">
 
-            ///////////////////////////
-            /* Create the vrvToolkit */
-            ///////////////////////////
-            var vrvToolkit = new verovio.toolkit();
-            options = {
-                pageHeight: 2100,
-                pageWidth: 3000,
-                ignoreLayout: 1,
-                border: 100,
-                scale: 50
-            };
-            vrvToolkit.setOptions(options)
-
-            ////////////////////////////////////
-            /* Load the file using a HTTP GET */
-            ////////////////////////////////////
-            $.ajax({
-                url: "{{ object.cmn_mei_file.url }}"
-                , dataType: "text"
-                , success: function(data) {
-                    var svg = vrvToolkit.renderData(data);
-                    $("#svg_output").html(svg);
-                }
-            });
-        </script>
-
+</div>
+    </section>
 {% endblock %}
