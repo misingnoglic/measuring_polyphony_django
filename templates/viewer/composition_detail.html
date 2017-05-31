@@ -4,7 +4,7 @@
 {% block head %}
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
     <style>
-        #image-map {
+        #mensural-svg {
           width: 100%;
           height: 300px;
           border: 1px solid #ccc;
@@ -53,8 +53,8 @@
 <br>
             <b>Playback</b><br>
 
-            <a href="#" onClick="MIDIjs.play('{% url 'composition-midi' object.pk %}');">Play MIDI</a><br>
-            <a href="#" onClick="MIDIjs.stop();">Stop MIDI Playback</a><br>
+            <a href="#mensural-svg" onClick="MIDIjs.play('{% url 'composition-midi' object.pk %}');">Play MIDI</a><br>
+            <a href="#mensural-svg" onClick="MIDIjs.stop();">Stop MIDI Playback</a><br>
 
 <b>Downloads</b>
 <ul style="list-style: none; padding: 0; margin: 0">
@@ -74,7 +74,7 @@
     <section id="content">
     <div>
         <!--<img src="{% url 'composition-svg' object.pk %}"> -->
-        <div id="image-map"></div>
+        <div id="mensural-svg"></div>
     </div>
     </section>
 
@@ -83,7 +83,7 @@
     // Using leaflet.js to pan and zoom a big image.
     // See also: http://kempe.net/blog/2014/06/14/leaflet-pan-zoom-image.html
     // create the slippy map
-    var map = L.map('image-map', {
+    var map = L.map('mensural-svg', {
       minZoom: 0.5,
       maxZoom: 3,
       center: [0, 0],
