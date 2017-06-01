@@ -53,8 +53,9 @@ This website is created to display the research of Professor Karen Desmond at Br
 * mei_files/... -> All the initial mei files given for the project. They dont serve any purpose in the app, but they're good to keep in that format.
 * static/... -> All of the collected static files. Don't edit these ones, always edit the ones in viewer/static/... and then run `python manage.py collectstatic`
 * templates/... -> All of the templates that are rendered - edit these to edit the HTML files for the website. They are rendered using the Django templating language (like HTML but with some logic for loops and stuff). The way the templates are rendered is you have these template files, which refer to variables and such, and those are provided by the functions/classes in viewer/views.py
+    * templates/base.html is the "base" template - it contains all of the stuff that is in all of the other files as well (e.g. navbar and footer). 
 * viewer/... -> All of the files for the main app. 
-    * static/... -> All of the CSS, javascript, etc for the website template we're using: https://templated.co/introspect
+    * static/... -> All of the CSS, javascript, etc for the website template we're using: https://templated.co/introspect - edit these files and then run the `python manage.py collectstatic` command
     * admin.py -> The code that controls the admin interface
     * logic.py -> All of the functions relating to verovio
     * models.py -> All of the database models. If you want to change the SQL, this is where you do it (and then run the makemigrations/migrate commands)
