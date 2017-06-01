@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from viewer.models import Composition, SourceRelationship, FolioPage
-from viewer.logic import mei_to_svg, mei_to_midi
+from viewer.logic import mei_to_svg, mei_to_midi, svg_size
 
 
 
@@ -76,4 +76,8 @@ class CompositionDetailView(DetailView):
         context['folios'] = folios
         conc_sources = SourceRelationship.objects.filter(composition=self.object, primary=False)
         context['conc_sources'] = conc_sources
+        svg = mei_to_svg(Composition.objects.get(pk=self.object.pk).mens_mei_file.path)
+        width, height = svg_size(svg)
+        context['height'] = height
+        context['width'] = width
         return context

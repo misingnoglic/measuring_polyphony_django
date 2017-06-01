@@ -7,7 +7,12 @@
 import verovio
 import secrets
 import base64
+import xml.etree.ElementTree as ET
 
+
+def svg_size(svg_string: str):
+    root = ET.fromstring(svg_string)
+    return root.attrib['width'].strip("px"), root.attrib['height'].strip("px")
 
 
 def load_mei_tk(mensural=True):
