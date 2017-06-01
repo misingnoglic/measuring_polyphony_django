@@ -96,7 +96,7 @@ class Composition(models.Model):
     genre = models.ForeignKey(Genre)
     main_source = models.ForeignKey(Source)
     number_voices = models.IntegerField()
-    clefs = models.ManyToManyField(Clef)
+    clefs = models.ManyToManyField(Clef, blank=True)
     modus = models.CharField(null=True, blank=True, max_length=10)
     tempus = models.CharField(null=True, blank=True, max_length=10)
     midi_bpm = models.PositiveSmallIntegerField(default=800)
