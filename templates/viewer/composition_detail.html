@@ -26,7 +26,11 @@
         <!--<img src="{% url 'composition-svg' object.pk %}"> -->
         <div id="mensural-svg"></div>
     </div>
+            <a href="#mensural-svg" onClick="MIDIjs.play('{% url 'composition-midi' object.pk %}');"><i class="fa fa-play" aria-hidden="true"></i></a>
+            <a href="#mensural-svg" onClick="MIDIjs.stop();"><i class="fa fa-stop" aria-hidden="true"></i></a><br>
+
     </section>
+
 <b>Primary manuscript source for this transcription</b>
 <br>
             <b>{{ object.main_source }}</b>
@@ -57,10 +61,7 @@
 <b>Previous Edition(s)</b><br>
             {{ object.edition }}
 <br>
-            <b>Playback</b><br>
 
-            <a href="#mensural-svg" onClick="MIDIjs.play('{% url 'composition-midi' object.pk %}');">Play MIDI</a><br>
-            <a href="#mensural-svg" onClick="MIDIjs.stop();">Stop MIDI Playback</a><br>
 
 <b>Downloads</b>
 <ul style="list-style: none; padding: 0; margin: 0">
