@@ -26,10 +26,17 @@
         <!--<img src="{% url 'composition-svg' object.pk %}"> -->
         <div id="mensural-svg"></div>
     </div>
-            <a href="#mensural-svg" onClick="MIDIjs.play('{% url 'composition-midi' object.pk %}');"><i class="fa fa-play" aria-hidden="true"></i></a>
-            <a href="#mensural-svg" onClick="MIDIjs.stop();"><i class="fa fa-stop" aria-hidden="true"></i></a><br>
+            <a href="#" onClick="MIDIjs.play('{% url 'composition-midi' object.pk %}');"><i class="fa fa-play" aria-hidden="true"></i></a>
+            <a href="#" onClick="MIDIjs.stop();"><i class="fa fa-stop" aria-hidden="true"></i></a><br>
 
     </section>
+        {% if object.spotify_link %}
+        <section>
+            <div>
+                <iframe src="{{ object.spotify_link }}" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+            </div>
+        </section>
+        {% endif %}
 
 <b>Primary manuscript source for this transcription</b>
 <br>

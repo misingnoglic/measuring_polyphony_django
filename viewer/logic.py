@@ -44,10 +44,11 @@ def mei_to_svg(file_path: str):
     svg_string = tk.renderToSvg(1)
     return svg_string
 
-def mei_to_midi(file_path: str):
+def mei_to_midi(file_path: str, bpm: int):
     """
     Turns an MEI file to a midi file - adds the bpm as 800
     :param file_path: Path to mei
+    :param bpm: BPM of the midi
     :return: MIDI file (list of bytes)
     """
 
@@ -55,7 +56,7 @@ def mei_to_midi(file_path: str):
     mei = open(file_path).read()
     s = "scoreDef"
     i = mei.find(s)
-    mei = mei[:i+len(s)] + ''' midi.bpm="800" '''+mei[i+len(s):]
+    mei = mei[:i+len(s)] + f''' midi.bpm="{bpm}" '''+mei[i+len(s):]
 
     # load it into verovio and make it a midi file
     tk = load_mei_tk()

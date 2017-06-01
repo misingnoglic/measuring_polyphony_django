@@ -75,7 +75,7 @@ class Edition(models.Model):
 
 class ProjectMember(models.Model):
     initials = models.CharField(max_length=5)
-    name = models.CharField(max_length=20)
+    name = models.CharField(max_length=20, blank=True)
     def __str__(self):
         return "{}".format(self.initials)
 
@@ -99,13 +99,15 @@ class Composition(models.Model):
     clefs = models.ManyToManyField(Clef)
     modus = models.CharField(null=True, blank=True, max_length=10)
     tempus = models.CharField(null=True, blank=True, max_length=10)
+    midi_bpm = models.PositiveSmallIntegerField(default=800)
+    spotify_link = models.URLField(blank=True, null=True)
     edition = models.ForeignKey(Edition, null=True, blank=True)
     reference = models.CharField(max_length=100, null=True, blank=True)
     cmn_mei_file = models.FileField(upload_to="common_mei/")
     mens_mei_file = models.FileField(upload_to="mensural_mei/")
     pdf_file = models.FileField(upload_to="pdf/", null=True, blank=True)
     mp3_file = models.FileField(upload_to="mp3/", null=True, blank=True)
-    diamm_composition_id = models.CharField(max_length=200)
+    diamm_composition_id = models.CharField(max_length=200, blank=True)
     transcriber = models.ForeignKey(ProjectMember, related_name="transcriber", null=True, blank=True)
     transcription_entered = models.DateField(null=True, blank=True)
     transcription_checked_by = models.ManyToManyField(ProjectMember, "transcriber_checker")

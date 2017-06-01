@@ -6,7 +6,6 @@ from viewer.models import Composition, SourceRelationship, FolioPage
 from viewer.logic import mei_to_svg, mei_to_midi, svg_size
 
 
-
 def hello(request):
     """
     Renders the home page
@@ -48,7 +47,7 @@ def midi(request, pk):
     :return: 
     """
     piece = Composition.objects.get(pk=pk)
-    midi_file = mei_to_midi(piece.cmn_mei_file.path)
+    midi_file = mei_to_midi(piece.cmn_mei_file.path, piece.midi_bpm)
     return HttpResponse(midi_file, content_type="audio/mid")
 
 
