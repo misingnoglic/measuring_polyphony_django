@@ -21,7 +21,7 @@
                 <h2>{{ object.fullname }}</h2>
             </header>
 <h3>{{ object.composerfull }}</h3>
-<b>Primary Source for this transcription</b>
+<b>Primary manuscript source for this transcription</b>
 <br>
             <b>{{ object.main_source }}</b>
 {% if folios %}
@@ -30,7 +30,7 @@
 {% endif %}
 <br>
 {% if object.main_source.diamm_source %}
-    <a href="{{ object.main_source.diamm_source }} " target="_blank">Information about source</a>
+    <a href="{{ object.main_source.diamm_source }} " target="_blank">Detailed information on this manuscript source</a>
     <br>
 {% endif %}
 {% if object.main_source.iiif_manifest %}
@@ -48,7 +48,7 @@
     <br>
 {% endif %}
 
-<b>Edition(s)</b><br>
+<b>Previous Edition(s)</b><br>
             {{ object.edition }}
 <br>
             <b>Playback</b><br>
@@ -59,13 +59,13 @@
 <b>Downloads</b>
 <ul style="list-style: none; padding: 0; margin: 0">
     {% if object.mens_mei_file %}
-        <a href="{{ object.mens_mei_file.url }}"><li>Mensural MEI</li></a>
-        <a href="{% url 'composition-svg' object.pk %}" target="_blank"><li>SVG for Score</li></a>
+        <a href="{{ object.mens_mei_file.url }}"><li>MEI-MENS (Mensural notation version)</li></a>
+        <a href="{% url 'composition-svg' object.pk %}" target="_blank"><li>SVG</li></a>
     {% endif %}
 
     {% if object.cmn_mei_file %}
-        <a href="{{ object.cmn_mei_file.url }}"><li>Common MEI</li></a>
-        <a href="{% url 'composition-midi' object.pk %}" target="_blank"><li>MIDI for Score</li></a>
+        <a href="{{ object.cmn_mei_file.url }}"><li>MEI-CMN (Standard notation version)</li></a>
+        <a href="{% url 'composition-midi' object.pk %}" target="_blank"><li>MIDI</li></a>
 
     {% endif %}
 
