@@ -4,6 +4,7 @@ from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from viewer.models import Composition, SourceRelationship, FolioPage
 from viewer.logic import mei_to_svg, mei_to_midi, svg_size
+from django.http import Http404
 
 
 def hello(request):
@@ -57,12 +58,27 @@ class CompositionListView(ListView):
     """
     model = Composition
 
+    def get_queryset(self, queryset=None):
+        obj = super(CompositionListView, self).get_queryset()
+        return obj.filter(is_live=True)
+
 
 class CompositionDetailView(DetailView):
     """
     View for the composition detail page
     """
     model = Composition
+
+    def get_object(self, queryset=None):
+        """
+        Overwriting so that we can 404 if it's not live
+        :param queryset: 
+        :return: 
+        """
+        obj = super(CompositionDetailView, self).get_object(queryset=queryset)
+        if not obj.is_live:
+            raise Http404()
+        return obj
 
     def get_context_data(self, **kwargs):
         """
