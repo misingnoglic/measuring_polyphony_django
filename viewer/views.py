@@ -39,6 +39,17 @@ def svg(request, pk):
     svg_file = mei_to_svg(piece.mens_mei_file.path)
     return HttpResponse(svg_file, content_type="image/svg+xml")
 
+def cmn_svg(request, pk):
+    """
+    Return the common SVG file as an HTTP Response
+    :param request: 
+    :param pk: 
+    :return: 
+    """
+    piece = Composition.objects.get(pk=pk)
+    svg_file = mei_to_svg(piece.cmn_mei_file.path, mensural=False)
+    return HttpResponse(svg_file, content_type="image/svg+xml")
+
 
 def midi(request, pk):
     """

@@ -27,19 +27,23 @@ def load_mei_tk(mensural=True):
     # Suggested by developer on github for mensural MEI files
     if mensural:
         tk.setNoLayout(True)
-        #tk.setPageHeight(800)
-        #tk.setPageWidth(2)
+
+    else:
+        tk.setPageHeight(2000)
+        tk.setPageWidth(1500)
+        tk.redoLayout()
+
     tk.setFormat("mei")
     return tk
 
 
-def mei_to_svg(file_path: str):
+def mei_to_svg(file_path: str, mensural=True):
     """
     Takes the path for an MEI, and returns the SVG file. 
     :param file_path: Path to the MEI
     :return: SVG
     """
-    tk = load_mei_tk()
+    tk = load_mei_tk(mensural=mensural)
     tk.loadFile(file_path)
     svg_string = tk.renderToSvg(1)
     return svg_string

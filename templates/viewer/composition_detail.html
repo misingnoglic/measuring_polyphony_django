@@ -77,6 +77,7 @@
 
     {% if object.cmn_mei_file %}
         <a href="{{ object.cmn_mei_file.url }}"><li>MEI-CMN (Standard notation version)</li></a>
+        <a href="{% url 'composition-svg-cmn' object.pk %}" target="_blank"><li>SVG-CMN</li></a>
         <a href="{% url 'composition-midi' object.pk %}" target="_blank"><li>MIDI</li></a>
 
     {% endif %}
